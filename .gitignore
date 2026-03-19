@@ -24,15 +24,3 @@ MWP-BERT_zh_hf/
 mwp-bert2bert-tree-main/
 tf-logs/
 .codex/
-
-# Large training artifacts and caches
-**/__pycache__/
-*.pt
-*.bin
-
-# Math23k graph v2 heavy assets
-lunwen/finetune/Math23k_graph_v2/.cache_preprocessed/
-lunwen/finetune/Math23k_graph_v2/models_graph_wape_4v100/
-lunwen/finetune/Math23k_graph_v2/data/ape201k_train.json
-lunwen/finetune/Math23k_graph_v2/data/ape_simple_train.json
-lunwen/finetune/Math23k_graph_v2/data/ape_simple_train_kg.json
