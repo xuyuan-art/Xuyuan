@@ -1,0 +1,12 @@
+{
+  "best_epoch": 75,
+  "valid_equation_acc_23k": 0.7321965897693079,
+  "valid_value_acc_23k": 0.872617853560682,
+  "best_equation_acc_23k": 0.761,
+  "best_value_acc_23k": 0.897,
+  "best_equation_acc_ape": 0.6770321876704856,
+  "best_value_acc_ape": 0.8057828696126569,
+  "ape_train_ratio": 1.0,
+  "best_equation_acc": 0.761,
+  "best_value_acc": 0.897
+}

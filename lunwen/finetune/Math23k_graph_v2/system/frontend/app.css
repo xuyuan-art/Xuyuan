@@ -1,0 +1,2 @@
+/* Compatibility entry: keep old stylesheet path working. */
+@import url("./css/common.css");

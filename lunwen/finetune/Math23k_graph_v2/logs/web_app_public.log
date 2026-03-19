@@ -1,0 +1,9 @@
+[web] serving on http://0.0.0.0:18082
+[web] db=/root/lunwen/finetune/Math23k_graph_v2/system/webapp.db
+[web] model_dir=/root/autodl-tmp/finetune_models-zh-v2
+[web] solver_device=cpu
+[web] app_timezone=Asia/Shanghai
+[web] api_only=True
+[web] cors_allowed_origins=*
+[web] session_cookie_samesite=None
+[web] session_cookie_secure=True

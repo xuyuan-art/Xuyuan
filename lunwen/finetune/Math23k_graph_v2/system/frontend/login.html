@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>登录 / 注册</title>
+  <link rel="stylesheet" href="./css/common.css" />
+</head>
+<body class="auth-page">
+  <div id="flash"></div>
+  <div class="top-accent"></div>
+  <div class="auth-layout">
+    <section class="left">
+      <div class="left-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="left-head">
+        <div class="hero-title">基于数学语义理解的数学应用题求解系统</div>
+      </div>
+      <div class="left-visual">
+        <svg class="curve-canvas" viewBox="0 0 1000 900" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="traceBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#dce6f5" />
+              <stop offset="55%" stop-color="#a7bfd9" />
+              <stop offset="100%" stop-color="#e8eef9" />
+            </linearGradient>
+          </defs>
+          <path id="infPath" class="curve-line s-main" d="M-120,470 C0,330 120,330 240,470 C360,610 480,610 600,470 C720,330 840,330 960,470 C1080,610 1200,610 1320,470"></path>
+          <path class="curve-trace trace-1" d="M-120,470 C0,330 120,330 240,470 C360,610 480,610 600,470 C720,330 840,330 960,470 C1080,610 1200,610 1320,470"></path>
+          <path class="curve-trace trace-2" d="M-120,470 C0,330 120,330 240,470 C360,610 480,610 600,470 C720,330 840,330 960,470 C1080,610 1200,610 1320,470"></path>
+          <path class="extend-line tail-extend" d="M-180,532 C-162,512 -142,492 -120,470"></path>
+          <path class="extend-line head-extend" d="M1320,470 C1342,448 1368,422 1402,396"></path>
+          <circle class="curve-node tail" cx="-120" cy="470" r="4.2"></circle>
+          <circle class="curve-node head" cx="1320" cy="470" r="4.2"></circle>
+          <circle class="trace-head" r="4.4">
+            <animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#infPath"></mpath>
+            </animateMotion>
+          </circle>
+          <circle class="trace-head" r="3.6" opacity="0.65">
+            <animateMotion dur="5.2s" begin="-2.6s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#infPath"></mpath>
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+      <div class="left-foot">
+        <div class="tagline">让语义理解驱动建模，让每一步推理都清晰可见。</div>
+      </div>
+    </section>
+    <section class="right">
+      <div class="auth-card">
+        <div class="tabs">
+          <a href="?tab=login" class="tab" id="tab-login">登录</a>
+          <a href="?tab=register" class="tab" id="tab-register">注册</a>
+        </div>
+        <div id="auth-error"></div>
+
+        <form id="form-login">
+          <label>用户名</label>
+          <input name="username" autocomplete="username" required />
+          <label>密码</label>
+          <input name="password" type="password" autocomplete="current-password" required />
+          <button class="btn" type="submit" style="width:100%;margin-top:12px;">登录</button>
+        </form>
+
+        <form id="form-register" class="hidden">
+          <label>用户名</label>
+          <input name="username" autocomplete="username" required />
+          <label>密码（至少 6 位）</label>
+          <input name="password" type="password" autocomplete="new-password" required />
+          <button class="btn" type="submit" style="width:100%;margin-top:12px;">注册并登录</button>
+        </form>
+
+        <div class="hint">登录后将按角色进入用户工作台或数据后台</div>
+      </div>
+    </section>
+  </div>
+  <script src="./config.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

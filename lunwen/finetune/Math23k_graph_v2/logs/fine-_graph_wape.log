@@ -1,0 +1,1196 @@
+[launch] python=/root/miniconda3/envs/mwp-bert-5090/bin/python nproc_per_node=4 master_port=29501 omp_threads=1
+/root/miniconda3/envs/mwp-bert-5090/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+/root/miniconda3/envs/mwp-bert-5090/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+/root/miniconda3/envs/mwp-bert-5090/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+/root/miniconda3/envs/mwp-bert-5090/lib/python3.10/site-packages/transformers/utils/generic.py:311: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  torch.utils._pytree._register_pytree_node(
+Reading lines...
+Reading lines...
+[graph_cfg] disable_graph=False relation_num=5 graph_layers=2 graph_dropout=0.50 relation_dropout=0.00 active_relations=[0, 1, 2, 3, 4] ckpt_every=10 ape_train_ratio=1.00 optimizer=adam lr=5e-05 head_lr_scale=1.00 step_size=30 gamma=0.50
+[cache] enabled key=451270c7869279e8b53c0ebb85ce5335 path=/root/lunwen/finetune/Math23k_graph_v2/.cache_preprocessed/math23k_graph_wape_4v100_451270c7869279e8b53c0ebb85ce5335.pkl
+[cache] miss -> building preprocessed dataset on all ranks (first run)
+Reading lines...
+Reading lines...
+Reading lines...
+Reading lines...
+Reading lines...
+Reading lines...
+Reading lines...
+Transfer numbers...
+Reading lines...
+Transfer numbers...
+Reading lines...
+Transfer numbers...
+Reading lines...
+Transfer numbers...
+Indexing words for graph-enhanced pipeline...
+Indexing words for graph-enhanced pipeline...
+Indexing words for graph-enhanced pipeline...
+Indexing words for graph-enhanced pipeline...
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1000
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1000
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1000
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1000
+Indexing words for graph-enhanced pipeline...
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 997
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 997
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 997
+Indexing words for graph-enhanced pipeline...
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 997
+Indexing words for graph-enhanced pipeline...
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+keep_words 10219 / 29692 = 0.3442
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1833
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1833
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1833
+Indexed 10222 words in input language, 42 words in output
+Number of graph training data 100409
+Number of graph testing data 1833
+[cache] saved preprocessed dataset
+[data] train_23k=21162 train_ape=79338 sampled_train_ape=79338 valid_23k=1000 test_23k=1000 test_ape=1864
+[ddp] find_unused_encoder=True find_unused_heads=False head_static_graph=True
+[train] epoch=1/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=1 step=100/785 fusion_gate=0.5006 problem_gate=0.5017 valid_node_ratio=0.4330 rel_w=[0:0.234,1:0.219,2:0.244,3:0.156,4:0.146]
+[graph] epoch=1 step=200/785 fusion_gate=0.4823 problem_gate=0.5064 valid_node_ratio=0.4208 rel_w=[0:0.227,1:0.256,2:0.230,3:0.153,4:0.134]
+[graph] epoch=1 step=300/785 fusion_gate=0.4751 problem_gate=0.4881 valid_node_ratio=0.4483 rel_w=[0:0.232,1:0.285,2:0.214,3:0.141,4:0.128]
+[graph] epoch=1 step=400/785 fusion_gate=0.4733 problem_gate=0.4753 valid_node_ratio=0.4448 rel_w=[0:0.235,1:0.272,2:0.213,3:0.155,4:0.125]
+[graph] epoch=1 step=500/785 fusion_gate=0.4759 problem_gate=0.4704 valid_node_ratio=0.4288 rel_w=[0:0.239,1:0.299,2:0.198,3:0.141,4:0.123]
+[graph] epoch=1 step=600/785 fusion_gate=0.4754 problem_gate=0.4653 valid_node_ratio=0.4483 rel_w=[0:0.269,1:0.265,2:0.203,3:0.141,4:0.122]
+[graph] epoch=1 step=700/785 fusion_gate=0.4853 problem_gate=0.4665 valid_node_ratio=0.4601 rel_w=[0:0.263,1:0.284,2:0.198,3:0.133,4:0.123]
+[graph] epoch=1 summary fusion_gate=0.4928 problem_gate=0.4668 valid_node_ratio=0.4338 rel_w=[0:0.261,1:0.278,2:0.194,3:0.145,4:0.123]
+epoch=1  avg_loss=1.3688 elapsed=0h 4m 8s
+--------------------------------
+/root/miniconda3/envs/mwp-bert-5090/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/root/lunwen/finetune/Math23k_graph_v2/src/train_and_evaluate.py:1003: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  current_beams.append(TreeBeam(b.score+float(tv), current_node_stack, current_embeddings_stacks,
+337 386 997
+valid_answer_acc_23k 0.33801404212637914 0.38716148445336007
+346 398 1000
+test_answer_acc_23k 0.346 0.398
+527 621 1833
+test_answer_acc_ape 0.287506819421713 0.33878887070376434
+testing time 0h 4m 36s
+------------------------------------------------------
+[save] new_best epoch=1 23k_equation=0.346000 23k_value=0.398000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=1 ape_equation=0.287507 ape_value=0.338789
+[train] epoch=2/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=2 step=100/785 fusion_gate=0.4906 problem_gate=0.4707 valid_node_ratio=0.6073 rel_w=[0:0.508,1:0.121,2:0.193,3:0.096,4:0.083]
+[graph] epoch=2 step=200/785 fusion_gate=0.4945 problem_gate=0.4717 valid_node_ratio=0.4457 rel_w=[0:0.290,1:0.281,2:0.166,3:0.150,4:0.113]
+[graph] epoch=2 step=300/785 fusion_gate=0.4957 problem_gate=0.4724 valid_node_ratio=0.4428 rel_w=[0:0.294,1:0.272,2:0.152,3:0.170,4:0.114]
+[graph] epoch=2 step=400/785 fusion_gate=0.5001 problem_gate=0.4725 valid_node_ratio=0.4348 rel_w=[0:0.301,1:0.272,2:0.139,3:0.174,4:0.113]
+[graph] epoch=2 step=500/785 fusion_gate=0.5017 problem_gate=0.4737 valid_node_ratio=0.4283 rel_w=[0:0.294,1:0.266,2:0.137,3:0.189,4:0.113]
+[graph] epoch=2 step=600/785 fusion_gate=0.5012 problem_gate=0.4756 valid_node_ratio=0.4521 rel_w=[0:0.312,1:0.255,2:0.130,3:0.196,4:0.107]
+[graph] epoch=2 step=700/785 fusion_gate=0.5028 problem_gate=0.4768 valid_node_ratio=0.4332 rel_w=[0:0.310,1:0.259,2:0.125,3:0.202,4:0.105]
+[graph] epoch=2 summary fusion_gate=0.5019 problem_gate=0.4762 valid_node_ratio=0.4478 rel_w=[0:0.303,1:0.263,2:0.127,3:0.205,4:0.102]
+epoch=2  avg_loss=0.7683 elapsed=0h 4m 13s
+--------------------------------
+[train] epoch=3/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=3 step=100/785 fusion_gate=0.5026 problem_gate=0.4765 valid_node_ratio=0.4486 rel_w=[0:0.301,1:0.279,2:0.126,3:0.192,4:0.102]
+[graph] epoch=3 step=200/785 fusion_gate=0.5028 problem_gate=0.4776 valid_node_ratio=0.4626 rel_w=[0:0.289,1:0.291,2:0.125,3:0.194,4:0.101]
+[graph] epoch=3 step=300/785 fusion_gate=0.5040 problem_gate=0.4775 valid_node_ratio=0.4341 rel_w=[0:0.279,1:0.288,2:0.129,3:0.202,4:0.103]
+[graph] epoch=3 step=400/785 fusion_gate=0.5040 problem_gate=0.4767 valid_node_ratio=0.4445 rel_w=[0:0.265,1:0.307,2:0.123,3:0.206,4:0.099]
+[graph] epoch=3 step=500/785 fusion_gate=0.5031 problem_gate=0.4754 valid_node_ratio=0.4538 rel_w=[0:0.260,1:0.311,2:0.130,3:0.202,4:0.097]
+[graph] epoch=3 step=600/785 fusion_gate=0.5049 problem_gate=0.4752 valid_node_ratio=0.4596 rel_w=[0:0.280,1:0.284,2:0.130,3:0.205,4:0.102]
+[graph] epoch=3 step=700/785 fusion_gate=0.5048 problem_gate=0.4740 valid_node_ratio=0.4411 rel_w=[0:0.280,1:0.287,2:0.131,3:0.205,4:0.098]
+[graph] epoch=3 summary fusion_gate=0.5044 problem_gate=0.4727 valid_node_ratio=0.4223 rel_w=[0:0.250,1:0.310,2:0.126,3:0.218,4:0.097]
+epoch=3  avg_loss=0.5729 elapsed=0h 4m 15s
+--------------------------------
+[train] epoch=4/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=4 step=100/785 fusion_gate=0.5043 problem_gate=0.4724 valid_node_ratio=0.4307 rel_w=[0:0.251,1:0.292,2:0.133,3:0.226,4:0.099]
+[graph] epoch=4 step=200/785 fusion_gate=0.5040 problem_gate=0.4706 valid_node_ratio=0.4375 rel_w=[0:0.262,1:0.286,2:0.135,3:0.221,4:0.096]
+[graph] epoch=4 step=300/785 fusion_gate=0.5040 problem_gate=0.4700 valid_node_ratio=0.4406 rel_w=[0:0.262,1:0.294,2:0.136,3:0.211,4:0.096]
+[graph] epoch=4 step=400/785 fusion_gate=0.5035 problem_gate=0.4702 valid_node_ratio=0.4383 rel_w=[0:0.248,1:0.284,2:0.149,3:0.222,4:0.097]
+[graph] epoch=4 step=500/785 fusion_gate=0.5031 problem_gate=0.4696 valid_node_ratio=0.4478 rel_w=[0:0.258,1:0.273,2:0.146,3:0.226,4:0.097]
+[graph] epoch=4 step=600/785 fusion_gate=0.5037 problem_gate=0.4717 valid_node_ratio=0.4523 rel_w=[0:0.248,1:0.274,2:0.151,3:0.229,4:0.098]
+[graph] epoch=4 step=700/785 fusion_gate=0.5016 problem_gate=0.4712 valid_node_ratio=0.4376 rel_w=[0:0.257,1:0.290,2:0.154,3:0.204,4:0.096]
+[graph] epoch=4 summary fusion_gate=0.5005 problem_gate=0.4703 valid_node_ratio=0.4563 rel_w=[0:0.271,1:0.279,2:0.167,3:0.190,4:0.093]
+epoch=4  avg_loss=0.4761 elapsed=0h 4m 15s
+--------------------------------
+[train] epoch=5/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=5 step=100/785 fusion_gate=0.5030 problem_gate=0.4690 valid_node_ratio=0.4337 rel_w=[0:0.242,1:0.301,2:0.163,3:0.199,4:0.095]
+[graph] epoch=5 step=200/785 fusion_gate=0.5020 problem_gate=0.4700 valid_node_ratio=0.4400 rel_w=[0:0.231,1:0.297,2:0.162,3:0.216,4:0.094]
+[graph] epoch=5 step=300/785 fusion_gate=0.5019 problem_gate=0.4697 valid_node_ratio=0.4637 rel_w=[0:0.252,1:0.285,2:0.166,3:0.202,4:0.095]
+[graph] epoch=5 step=400/785 fusion_gate=0.5038 problem_gate=0.4697 valid_node_ratio=0.4423 rel_w=[0:0.245,1:0.286,2:0.172,3:0.201,4:0.096]
+[graph] epoch=5 step=500/785 fusion_gate=0.5017 problem_gate=0.4678 valid_node_ratio=0.4582 rel_w=[0:0.228,1:0.297,2:0.190,3:0.191,4:0.095]
+[graph] epoch=5 step=600/785 fusion_gate=0.5026 problem_gate=0.4677 valid_node_ratio=0.4493 rel_w=[0:0.243,1:0.284,2:0.172,3:0.205,4:0.096]
+[graph] epoch=5 step=700/785 fusion_gate=0.5024 problem_gate=0.4687 valid_node_ratio=0.4288 rel_w=[0:0.243,1:0.292,2:0.182,3:0.186,4:0.097]
+[graph] epoch=5 summary fusion_gate=0.5032 problem_gate=0.4690 valid_node_ratio=0.4414 rel_w=[0:0.234,1:0.300,2:0.173,3:0.198,4:0.095]
+epoch=5  avg_loss=0.4108 elapsed=0h 4m 21s
+--------------------------------
+666 787 997
+valid_answer_acc_23k 0.6680040120361084 0.7893681043129388
+685 800 1000
+test_answer_acc_23k 0.685 0.8
+1108 1310 1833
+test_answer_acc_ape 0.6044735406437534 0.7146753955264593
+testing time 0h 4m 50s
+------------------------------------------------------
+[save] new_best epoch=5 23k_equation=0.685000 23k_value=0.800000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=5 ape_equation=0.604474 ape_value=0.714675
+[train] epoch=6/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=6 step=100/785 fusion_gate=0.5036 problem_gate=0.4702 valid_node_ratio=0.6136 rel_w=[0:0.429,1:0.111,2:0.132,3:0.217,4:0.111]
+[graph] epoch=6 step=200/785 fusion_gate=0.5025 problem_gate=0.4647 valid_node_ratio=0.4504 rel_w=[0:0.225,1:0.272,2:0.190,3:0.220,4:0.094]
+[graph] epoch=6 step=300/785 fusion_gate=0.5042 problem_gate=0.4656 valid_node_ratio=0.4288 rel_w=[0:0.210,1:0.303,2:0.181,3:0.212,4:0.094]
+[graph] epoch=6 step=400/785 fusion_gate=0.5043 problem_gate=0.4644 valid_node_ratio=0.4453 rel_w=[0:0.234,1:0.287,2:0.182,3:0.204,4:0.093]
+[graph] epoch=6 step=500/785 fusion_gate=0.5016 problem_gate=0.4629 valid_node_ratio=0.4417 rel_w=[0:0.224,1:0.294,2:0.191,3:0.199,4:0.092]
+[graph] epoch=6 step=600/785 fusion_gate=0.5019 problem_gate=0.4614 valid_node_ratio=0.4318 rel_w=[0:0.211,1:0.287,2:0.196,3:0.215,4:0.091]
+[graph] epoch=6 step=700/785 fusion_gate=0.4994 problem_gate=0.4624 valid_node_ratio=0.4453 rel_w=[0:0.210,1:0.297,2:0.194,3:0.211,4:0.088]
+[graph] epoch=6 summary fusion_gate=0.4997 problem_gate=0.4623 valid_node_ratio=0.4436 rel_w=[0:0.207,1:0.284,2:0.197,3:0.221,4:0.090]
+epoch=6  avg_loss=0.3647 elapsed=0h 4m 17s
+--------------------------------
+[train] epoch=7/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=7 step=100/785 fusion_gate=0.4988 problem_gate=0.4621 valid_node_ratio=0.4381 rel_w=[0:0.214,1:0.288,2:0.199,3:0.211,4:0.088]
+[graph] epoch=7 step=200/785 fusion_gate=0.4990 problem_gate=0.4589 valid_node_ratio=0.4393 rel_w=[0:0.214,1:0.311,2:0.177,3:0.211,4:0.087]
+[graph] epoch=7 step=300/785 fusion_gate=0.4981 problem_gate=0.4582 valid_node_ratio=0.4486 rel_w=[0:0.210,1:0.313,2:0.192,3:0.200,4:0.086]
+[graph] epoch=7 step=400/785 fusion_gate=0.4951 problem_gate=0.4569 valid_node_ratio=0.4439 rel_w=[0:0.218,1:0.293,2:0.193,3:0.208,4:0.088]
+[graph] epoch=7 step=500/785 fusion_gate=0.4948 problem_gate=0.4561 valid_node_ratio=0.4517 rel_w=[0:0.217,1:0.295,2:0.197,3:0.204,4:0.087]
+[graph] epoch=7 step=600/785 fusion_gate=0.4939 problem_gate=0.4546 valid_node_ratio=0.4381 rel_w=[0:0.205,1:0.302,2:0.195,3:0.209,4:0.089]
+[graph] epoch=7 step=700/785 fusion_gate=0.4927 problem_gate=0.4557 valid_node_ratio=0.4487 rel_w=[0:0.206,1:0.282,2:0.208,3:0.216,4:0.088]
+[graph] epoch=7 summary fusion_gate=0.4914 problem_gate=0.4559 valid_node_ratio=0.4433 rel_w=[0:0.200,1:0.306,2:0.212,3:0.195,4:0.086]
+epoch=7  avg_loss=0.3243 elapsed=0h 4m 18s
+--------------------------------
+[train] epoch=8/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=8 step=100/785 fusion_gate=0.4933 problem_gate=0.4547 valid_node_ratio=0.4419 rel_w=[0:0.221,1:0.291,2:0.187,3:0.213,4:0.088]
+[graph] epoch=8 step=200/785 fusion_gate=0.4960 problem_gate=0.4540 valid_node_ratio=0.4363 rel_w=[0:0.220,1:0.293,2:0.198,3:0.202,4:0.087]
+[graph] epoch=8 step=300/785 fusion_gate=0.4927 problem_gate=0.4539 valid_node_ratio=0.4625 rel_w=[0:0.216,1:0.315,2:0.203,3:0.177,4:0.088]
+[graph] epoch=8 step=400/785 fusion_gate=0.4903 problem_gate=0.4518 valid_node_ratio=0.4281 rel_w=[0:0.231,1:0.300,2:0.205,3:0.178,4:0.086]
+[graph] epoch=8 step=500/785 fusion_gate=0.4870 problem_gate=0.4506 valid_node_ratio=0.4458 rel_w=[0:0.222,1:0.295,2:0.206,3:0.192,4:0.085]
+[graph] epoch=8 step=600/785 fusion_gate=0.4899 problem_gate=0.4496 valid_node_ratio=0.4367 rel_w=[0:0.229,1:0.289,2:0.204,3:0.191,4:0.087]
+[graph] epoch=8 step=700/785 fusion_gate=0.4855 problem_gate=0.4511 valid_node_ratio=0.4516 rel_w=[0:0.217,1:0.299,2:0.205,3:0.191,4:0.088]
+[graph] epoch=8 summary fusion_gate=0.4861 problem_gate=0.4492 valid_node_ratio=0.4396 rel_w=[0:0.199,1:0.284,2:0.227,3:0.202,4:0.088]
+epoch=8  avg_loss=0.2952 elapsed=0h 4m 20s
+--------------------------------
+[train] epoch=9/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=9 step=100/785 fusion_gate=0.4873 problem_gate=0.4504 valid_node_ratio=0.4586 rel_w=[0:0.200,1:0.292,2:0.211,3:0.212,4:0.086]
+[graph] epoch=9 step=200/785 fusion_gate=0.4892 problem_gate=0.4487 valid_node_ratio=0.4443 rel_w=[0:0.213,1:0.300,2:0.200,3:0.201,4:0.086]
+[graph] epoch=9 step=300/785 fusion_gate=0.4878 problem_gate=0.4466 valid_node_ratio=0.4394 rel_w=[0:0.211,1:0.292,2:0.211,3:0.202,4:0.084]
+[graph] epoch=9 step=400/785 fusion_gate=0.4840 problem_gate=0.4452 valid_node_ratio=0.4473 rel_w=[0:0.218,1:0.299,2:0.216,3:0.180,4:0.088]
+[graph] epoch=9 step=500/785 fusion_gate=0.4827 problem_gate=0.4458 valid_node_ratio=0.4453 rel_w=[0:0.202,1:0.297,2:0.224,3:0.189,4:0.087]
+[graph] epoch=9 step=600/785 fusion_gate=0.4790 problem_gate=0.4453 valid_node_ratio=0.4291 rel_w=[0:0.194,1:0.321,2:0.221,3:0.177,4:0.087]
+[graph] epoch=9 step=700/785 fusion_gate=0.4792 problem_gate=0.4447 valid_node_ratio=0.4461 rel_w=[0:0.212,1:0.296,2:0.218,3:0.185,4:0.088]
+[graph] epoch=9 summary fusion_gate=0.4817 problem_gate=0.4445 valid_node_ratio=0.4472 rel_w=[0:0.223,1:0.307,2:0.208,3:0.178,4:0.083]
+epoch=9  avg_loss=0.2700 elapsed=0h 4m 18s
+--------------------------------
+[train] epoch=10/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=10 step=100/785 fusion_gate=0.4813 problem_gate=0.4456 valid_node_ratio=0.4533 rel_w=[0:0.212,1:0.289,2:0.210,3:0.202,4:0.087]
+[graph] epoch=10 step=200/785 fusion_gate=0.4829 problem_gate=0.4438 valid_node_ratio=0.4393 rel_w=[0:0.198,1:0.302,2:0.219,3:0.194,4:0.086]
+[graph] epoch=10 step=300/785 fusion_gate=0.4818 problem_gate=0.4431 valid_node_ratio=0.4405 rel_w=[0:0.216,1:0.295,2:0.213,3:0.190,4:0.086]
+[graph] epoch=10 step=400/785 fusion_gate=0.4823 problem_gate=0.4437 valid_node_ratio=0.4396 rel_w=[0:0.216,1:0.288,2:0.227,3:0.185,4:0.085]
+[graph] epoch=10 step=500/785 fusion_gate=0.4823 problem_gate=0.4419 valid_node_ratio=0.4518 rel_w=[0:0.216,1:0.296,2:0.214,3:0.189,4:0.085]
+[graph] epoch=10 step=600/785 fusion_gate=0.4796 problem_gate=0.4395 valid_node_ratio=0.4426 rel_w=[0:0.198,1:0.300,2:0.221,3:0.193,4:0.088]
+[graph] epoch=10 step=700/785 fusion_gate=0.4762 problem_gate=0.4418 valid_node_ratio=0.4464 rel_w=[0:0.213,1:0.293,2:0.210,3:0.199,4:0.085]
+[graph] epoch=10 summary fusion_gate=0.4761 problem_gate=0.4432 valid_node_ratio=0.4354 rel_w=[0:0.203,1:0.295,2:0.212,3:0.205,4:0.085]
+epoch=10  avg_loss=0.2479 elapsed=0h 4m 24s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_010
+710 829 997
+valid_answer_acc_23k 0.7121364092276831 0.831494483450351
+721 840 1000
+test_answer_acc_23k 0.721 0.84
+1161 1380 1833
+test_answer_acc_ape 0.6333878887070377 0.7528641571194763
+testing time 0h 5m 9s
+------------------------------------------------------
+[save] new_best epoch=10 23k_equation=0.721000 23k_value=0.840000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=10 ape_equation=0.633388 ape_value=0.752864
+[train] epoch=11/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=11 step=100/785 fusion_gate=0.4706 problem_gate=0.4415 valid_node_ratio=0.6263 rel_w=[0:0.397,1:0.128,2:0.198,3:0.163,4:0.114]
+[graph] epoch=11 step=200/785 fusion_gate=0.4728 problem_gate=0.4402 valid_node_ratio=0.4510 rel_w=[0:0.197,1:0.300,2:0.217,3:0.200,4:0.087]
+[graph] epoch=11 step=300/785 fusion_gate=0.4749 problem_gate=0.4390 valid_node_ratio=0.4453 rel_w=[0:0.196,1:0.290,2:0.219,3:0.209,4:0.086]
+[graph] epoch=11 step=400/785 fusion_gate=0.4745 problem_gate=0.4383 valid_node_ratio=0.4375 rel_w=[0:0.182,1:0.308,2:0.214,3:0.208,4:0.088]
+[graph] epoch=11 step=500/785 fusion_gate=0.4739 problem_gate=0.4359 valid_node_ratio=0.4406 rel_w=[0:0.190,1:0.289,2:0.235,3:0.201,4:0.085]
+[graph] epoch=11 step=600/785 fusion_gate=0.4736 problem_gate=0.4341 valid_node_ratio=0.4433 rel_w=[0:0.192,1:0.317,2:0.216,3:0.190,4:0.085]
+[graph] epoch=11 step=700/785 fusion_gate=0.4750 problem_gate=0.4338 valid_node_ratio=0.4343 rel_w=[0:0.204,1:0.284,2:0.223,3:0.201,4:0.088]
+[graph] epoch=11 summary fusion_gate=0.4739 problem_gate=0.4332 valid_node_ratio=0.4502 rel_w=[0:0.211,1:0.289,2:0.200,3:0.211,4:0.089]
+epoch=11  avg_loss=0.2318 elapsed=0h 4m 21s
+--------------------------------
+[train] epoch=12/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=12 step=100/785 fusion_gate=0.4786 problem_gate=0.4330 valid_node_ratio=0.4311 rel_w=[0:0.191,1:0.299,2:0.221,3:0.204,4:0.085]
+[graph] epoch=12 step=200/785 fusion_gate=0.4771 problem_gate=0.4301 valid_node_ratio=0.4452 rel_w=[0:0.203,1:0.301,2:0.216,3:0.196,4:0.084]
+[graph] epoch=12 step=300/785 fusion_gate=0.4735 problem_gate=0.4330 valid_node_ratio=0.4345 rel_w=[0:0.213,1:0.301,2:0.211,3:0.193,4:0.083]
+[graph] epoch=12 step=400/785 fusion_gate=0.4721 problem_gate=0.4321 valid_node_ratio=0.4375 rel_w=[0:0.201,1:0.304,2:0.215,3:0.196,4:0.084]
+[graph] epoch=12 step=500/785 fusion_gate=0.4718 problem_gate=0.4311 valid_node_ratio=0.4446 rel_w=[0:0.210,1:0.304,2:0.214,3:0.184,4:0.087]
+[graph] epoch=12 step=600/785 fusion_gate=0.4687 problem_gate=0.4287 valid_node_ratio=0.4485 rel_w=[0:0.196,1:0.292,2:0.225,3:0.198,4:0.089]
+[graph] epoch=12 step=700/785 fusion_gate=0.4684 problem_gate=0.4307 valid_node_ratio=0.4465 rel_w=[0:0.195,1:0.274,2:0.241,3:0.203,4:0.087]
+[graph] epoch=12 summary fusion_gate=0.4651 problem_gate=0.4297 valid_node_ratio=0.4396 rel_w=[0:0.197,1:0.303,2:0.203,3:0.211,4:0.085]
+epoch=12  avg_loss=0.2131 elapsed=0h 4m 19s
+--------------------------------
+[train] epoch=13/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=13 step=100/785 fusion_gate=0.4709 problem_gate=0.4318 valid_node_ratio=0.4599 rel_w=[0:0.207,1:0.291,2:0.211,3:0.202,4:0.089]
+[graph] epoch=13 step=200/785 fusion_gate=0.4689 problem_gate=0.4318 valid_node_ratio=0.4441 rel_w=[0:0.220,1:0.300,2:0.210,3:0.179,4:0.090]
+[graph] epoch=13 step=300/785 fusion_gate=0.4697 problem_gate=0.4288 valid_node_ratio=0.4454 rel_w=[0:0.204,1:0.293,2:0.227,3:0.182,4:0.094]
+[graph] epoch=13 step=400/785 fusion_gate=0.4667 problem_gate=0.4275 valid_node_ratio=0.4360 rel_w=[0:0.211,1:0.275,2:0.224,3:0.197,4:0.092]
+[graph] epoch=13 step=500/785 fusion_gate=0.4658 problem_gate=0.4289 valid_node_ratio=0.4400 rel_w=[0:0.196,1:0.295,2:0.221,3:0.201,4:0.087]
+[graph] epoch=13 step=600/785 fusion_gate=0.4634 problem_gate=0.4295 valid_node_ratio=0.4419 rel_w=[0:0.199,1:0.296,2:0.210,3:0.209,4:0.086]
+[graph] epoch=13 step=700/785 fusion_gate=0.4621 problem_gate=0.4241 valid_node_ratio=0.4208 rel_w=[0:0.178,1:0.327,2:0.225,3:0.181,4:0.089]
+[graph] epoch=13 summary fusion_gate=0.4621 problem_gate=0.4236 valid_node_ratio=0.4500 rel_w=[0:0.192,1:0.296,2:0.236,3:0.189,4:0.088]
+epoch=13  avg_loss=0.1986 elapsed=0h 4m 21s
+--------------------------------
+[train] epoch=14/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=14 step=100/785 fusion_gate=0.4639 problem_gate=0.4242 valid_node_ratio=0.4476 rel_w=[0:0.196,1:0.295,2:0.237,3:0.184,4:0.089]
+[graph] epoch=14 step=200/785 fusion_gate=0.4672 problem_gate=0.4216 valid_node_ratio=0.4411 rel_w=[0:0.195,1:0.292,2:0.215,3:0.204,4:0.093]
+[graph] epoch=14 step=300/785 fusion_gate=0.4665 problem_gate=0.4211 valid_node_ratio=0.4389 rel_w=[0:0.203,1:0.293,2:0.209,3:0.203,4:0.092]
+[graph] epoch=14 step=400/785 fusion_gate=0.4642 problem_gate=0.4224 valid_node_ratio=0.4440 rel_w=[0:0.194,1:0.294,2:0.221,3:0.200,4:0.091]
+[graph] epoch=14 step=500/785 fusion_gate=0.4640 problem_gate=0.4219 valid_node_ratio=0.4497 rel_w=[0:0.192,1:0.293,2:0.224,3:0.202,4:0.089]
+[graph] epoch=14 step=600/785 fusion_gate=0.4596 problem_gate=0.4225 valid_node_ratio=0.4400 rel_w=[0:0.192,1:0.296,2:0.213,3:0.207,4:0.092]
+[graph] epoch=14 step=700/785 fusion_gate=0.4583 problem_gate=0.4215 valid_node_ratio=0.4283 rel_w=[0:0.202,1:0.291,2:0.207,3:0.208,4:0.092]
+[graph] epoch=14 summary fusion_gate=0.4594 problem_gate=0.4206 valid_node_ratio=0.4278 rel_w=[0:0.216,1:0.300,2:0.201,3:0.189,4:0.093]
+epoch=14  avg_loss=0.1858 elapsed=0h 4m 23s
+--------------------------------
+[train] epoch=15/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=15 step=100/785 fusion_gate=0.4623 problem_gate=0.4220 valid_node_ratio=0.4448 rel_w=[0:0.212,1:0.290,2:0.213,3:0.188,4:0.097]
+[graph] epoch=15 step=200/785 fusion_gate=0.4613 problem_gate=0.4224 valid_node_ratio=0.4453 rel_w=[0:0.201,1:0.306,2:0.204,3:0.191,4:0.097]
+[graph] epoch=15 step=300/785 fusion_gate=0.4587 problem_gate=0.4184 valid_node_ratio=0.4208 rel_w=[0:0.203,1:0.284,2:0.217,3:0.199,4:0.097]
+[graph] epoch=15 step=400/785 fusion_gate=0.4616 problem_gate=0.4190 valid_node_ratio=0.4489 rel_w=[0:0.213,1:0.273,2:0.223,3:0.192,4:0.100]
+[graph] epoch=15 step=500/785 fusion_gate=0.4608 problem_gate=0.4180 valid_node_ratio=0.4467 rel_w=[0:0.202,1:0.291,2:0.222,3:0.185,4:0.099]
+[graph] epoch=15 step=600/785 fusion_gate=0.4545 problem_gate=0.4220 valid_node_ratio=0.4405 rel_w=[0:0.210,1:0.298,2:0.198,3:0.196,4:0.098]
+[graph] epoch=15 step=700/785 fusion_gate=0.4574 problem_gate=0.4218 valid_node_ratio=0.4491 rel_w=[0:0.203,1:0.285,2:0.200,3:0.212,4:0.100]
+[graph] epoch=15 summary fusion_gate=0.4547 problem_gate=0.4214 valid_node_ratio=0.4399 rel_w=[0:0.189,1:0.291,2:0.207,3:0.214,4:0.099]
+epoch=15  avg_loss=0.1764 elapsed=0h 4m 19s
+--------------------------------
+707 832 997
+valid_answer_acc_23k 0.7091273821464393 0.8345035105315948
+720 845 1000
+test_answer_acc_23k 0.72 0.845
+1178 1399 1833
+test_answer_acc_ape 0.6426623022367703 0.7632296781232951
+testing time 0h 4m 59s
+------------------------------------------------------
+[save] new_best epoch=15 23k_equation=0.720000 23k_value=0.845000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=15 ape_equation=0.642662 ape_value=0.763230
+[train] epoch=16/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=16 step=100/785 fusion_gate=0.4554 problem_gate=0.4227 valid_node_ratio=0.6274 rel_w=[0:0.378,1:0.122,2:0.202,3:0.142,4:0.156]
+[graph] epoch=16 step=200/785 fusion_gate=0.4578 problem_gate=0.4219 valid_node_ratio=0.4324 rel_w=[0:0.195,1:0.293,2:0.206,3:0.209,4:0.096]
+[graph] epoch=16 step=300/785 fusion_gate=0.4589 problem_gate=0.4230 valid_node_ratio=0.4414 rel_w=[0:0.199,1:0.287,2:0.224,3:0.191,4:0.099]
+[graph] epoch=16 step=400/785 fusion_gate=0.4579 problem_gate=0.4208 valid_node_ratio=0.4417 rel_w=[0:0.202,1:0.300,2:0.203,3:0.198,4:0.098]
+[graph] epoch=16 step=500/785 fusion_gate=0.4608 problem_gate=0.4198 valid_node_ratio=0.4417 rel_w=[0:0.193,1:0.305,2:0.221,3:0.187,4:0.093]
+[graph] epoch=16 step=600/785 fusion_gate=0.4585 problem_gate=0.4211 valid_node_ratio=0.4280 rel_w=[0:0.187,1:0.309,2:0.216,3:0.194,4:0.094]
+[graph] epoch=16 step=700/785 fusion_gate=0.4552 problem_gate=0.4198 valid_node_ratio=0.4428 rel_w=[0:0.196,1:0.294,2:0.222,3:0.196,4:0.092]
+[graph] epoch=16 summary fusion_gate=0.4578 problem_gate=0.4182 valid_node_ratio=0.4444 rel_w=[0:0.194,1:0.288,2:0.220,3:0.207,4:0.091]
+epoch=16  avg_loss=0.1645 elapsed=0h 4m 28s
+--------------------------------
+[train] epoch=17/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=17 step=100/785 fusion_gate=0.4595 problem_gate=0.4186 valid_node_ratio=0.4504 rel_w=[0:0.189,1:0.301,2:0.217,3:0.203,4:0.091]
+[graph] epoch=17 step=200/785 fusion_gate=0.4589 problem_gate=0.4174 valid_node_ratio=0.4490 rel_w=[0:0.182,1:0.311,2:0.212,3:0.205,4:0.090]
+[graph] epoch=17 step=300/785 fusion_gate=0.4567 problem_gate=0.4181 valid_node_ratio=0.4486 rel_w=[0:0.201,1:0.271,2:0.214,3:0.223,4:0.091]
+[graph] epoch=17 step=400/785 fusion_gate=0.4532 problem_gate=0.4179 valid_node_ratio=0.4387 rel_w=[0:0.187,1:0.303,2:0.210,3:0.208,4:0.092]
+[graph] epoch=17 step=500/785 fusion_gate=0.4498 problem_gate=0.4161 valid_node_ratio=0.4409 rel_w=[0:0.195,1:0.298,2:0.207,3:0.209,4:0.091]
+[graph] epoch=17 step=600/785 fusion_gate=0.4461 problem_gate=0.4189 valid_node_ratio=0.4372 rel_w=[0:0.190,1:0.302,2:0.209,3:0.207,4:0.091]
+[graph] epoch=17 step=700/785 fusion_gate=0.4502 problem_gate=0.4194 valid_node_ratio=0.4435 rel_w=[0:0.183,1:0.302,2:0.211,3:0.210,4:0.094]
+[graph] epoch=17 summary fusion_gate=0.4469 problem_gate=0.4187 valid_node_ratio=0.4408 rel_w=[0:0.182,1:0.285,2:0.226,3:0.214,4:0.093]
+epoch=17  avg_loss=0.1548 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=18/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=18 step=100/785 fusion_gate=0.4520 problem_gate=0.4207 valid_node_ratio=0.4444 rel_w=[0:0.189,1:0.303,2:0.214,3:0.198,4:0.096]
+[graph] epoch=18 step=200/785 fusion_gate=0.4545 problem_gate=0.4178 valid_node_ratio=0.4265 rel_w=[0:0.205,1:0.294,2:0.209,3:0.199,4:0.093]
+[graph] epoch=18 step=300/785 fusion_gate=0.4508 problem_gate=0.4165 valid_node_ratio=0.4385 rel_w=[0:0.193,1:0.293,2:0.221,3:0.199,4:0.095]
+[graph] epoch=18 step=400/785 fusion_gate=0.4511 problem_gate=0.4170 valid_node_ratio=0.4325 rel_w=[0:0.192,1:0.289,2:0.220,3:0.205,4:0.093]
+[graph] epoch=18 step=500/785 fusion_gate=0.4526 problem_gate=0.4178 valid_node_ratio=0.4519 rel_w=[0:0.193,1:0.291,2:0.216,3:0.203,4:0.096]
+[graph] epoch=18 step=600/785 fusion_gate=0.4488 problem_gate=0.4166 valid_node_ratio=0.4218 rel_w=[0:0.183,1:0.280,2:0.214,3:0.227,4:0.095]
+[graph] epoch=18 step=700/785 fusion_gate=0.4408 problem_gate=0.4162 valid_node_ratio=0.4414 rel_w=[0:0.190,1:0.306,2:0.215,3:0.193,4:0.096]
+[graph] epoch=18 summary fusion_gate=0.4465 problem_gate=0.4147 valid_node_ratio=0.4476 rel_w=[0:0.198,1:0.302,2:0.215,3:0.192,4:0.094]
+epoch=18  avg_loss=0.1454 elapsed=0h 4m 25s
+--------------------------------
+[train] epoch=19/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=19 step=100/785 fusion_gate=0.4494 problem_gate=0.4153 valid_node_ratio=0.4399 rel_w=[0:0.199,1:0.293,2:0.220,3:0.197,4:0.091]
+[graph] epoch=19 step=200/785 fusion_gate=0.4481 problem_gate=0.4170 valid_node_ratio=0.4287 rel_w=[0:0.184,1:0.302,2:0.220,3:0.201,4:0.094]
+[graph] epoch=19 step=300/785 fusion_gate=0.4439 problem_gate=0.4176 valid_node_ratio=0.4410 rel_w=[0:0.207,1:0.292,2:0.211,3:0.199,4:0.091]
+[graph] epoch=19 step=400/785 fusion_gate=0.4467 problem_gate=0.4166 valid_node_ratio=0.4373 rel_w=[0:0.204,1:0.311,2:0.202,3:0.190,4:0.094]
+[graph] epoch=19 step=500/785 fusion_gate=0.4472 problem_gate=0.4176 valid_node_ratio=0.4568 rel_w=[0:0.191,1:0.291,2:0.213,3:0.209,4:0.096]
+[graph] epoch=19 step=600/785 fusion_gate=0.4438 problem_gate=0.4162 valid_node_ratio=0.4492 rel_w=[0:0.181,1:0.299,2:0.210,3:0.215,4:0.096]
+[graph] epoch=19 step=700/785 fusion_gate=0.4432 problem_gate=0.4172 valid_node_ratio=0.4415 rel_w=[0:0.187,1:0.298,2:0.210,3:0.212,4:0.093]
+[graph] epoch=19 summary fusion_gate=0.4378 problem_gate=0.4181 valid_node_ratio=0.4284 rel_w=[0:0.199,1:0.331,2:0.203,3:0.176,4:0.091]
+epoch=19  avg_loss=0.1396 elapsed=0h 4m 23s
+--------------------------------
+[train] epoch=20/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=20 step=100/785 fusion_gate=0.4413 problem_gate=0.4160 valid_node_ratio=0.4358 rel_w=[0:0.210,1:0.302,2:0.207,3:0.188,4:0.092]
+[graph] epoch=20 step=200/785 fusion_gate=0.4433 problem_gate=0.4179 valid_node_ratio=0.4438 rel_w=[0:0.228,1:0.272,2:0.226,3:0.185,4:0.089]
+[graph] epoch=20 step=300/785 fusion_gate=0.4448 problem_gate=0.4170 valid_node_ratio=0.4383 rel_w=[0:0.206,1:0.287,2:0.222,3:0.191,4:0.093]
+[graph] epoch=20 step=400/785 fusion_gate=0.4472 problem_gate=0.4149 valid_node_ratio=0.4454 rel_w=[0:0.188,1:0.293,2:0.227,3:0.194,4:0.097]
+[graph] epoch=20 step=500/785 fusion_gate=0.4435 problem_gate=0.4135 valid_node_ratio=0.4344 rel_w=[0:0.189,1:0.300,2:0.214,3:0.196,4:0.101]
+[graph] epoch=20 step=600/785 fusion_gate=0.4473 problem_gate=0.4123 valid_node_ratio=0.4450 rel_w=[0:0.193,1:0.285,2:0.227,3:0.200,4:0.095]
+[graph] epoch=20 step=700/785 fusion_gate=0.4474 problem_gate=0.4140 valid_node_ratio=0.4316 rel_w=[0:0.184,1:0.313,2:0.220,3:0.191,4:0.091]
+[graph] epoch=20 summary fusion_gate=0.4461 problem_gate=0.4130 valid_node_ratio=0.4325 rel_w=[0:0.188,1:0.291,2:0.231,3:0.203,4:0.088]
+epoch=20  avg_loss=0.1320 elapsed=0h 4m 27s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_020
+715 849 997
+valid_answer_acc_23k 0.7171514543630892 0.8515546639919759
+725 853 1000
+test_answer_acc_23k 0.725 0.853
+1206 1438 1833
+test_answer_acc_ape 0.6579378068739771 0.784506273867976
+testing time 0h 5m 4s
+------------------------------------------------------
+[save] new_best epoch=20 23k_equation=0.725000 23k_value=0.853000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=20 ape_equation=0.657938 ape_value=0.784506
+[train] epoch=21/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=21 step=100/785 fusion_gate=0.4500 problem_gate=0.4100 valid_node_ratio=0.6168 rel_w=[0:0.342,1:0.126,2:0.231,3:0.130,4:0.171]
+[graph] epoch=21 step=200/785 fusion_gate=0.4437 problem_gate=0.4125 valid_node_ratio=0.4083 rel_w=[0:0.185,1:0.320,2:0.215,3:0.185,4:0.094]
+[graph] epoch=21 step=300/785 fusion_gate=0.4436 problem_gate=0.4143 valid_node_ratio=0.4407 rel_w=[0:0.185,1:0.304,2:0.212,3:0.203,4:0.097]
+[graph] epoch=21 step=400/785 fusion_gate=0.4436 problem_gate=0.4160 valid_node_ratio=0.4362 rel_w=[0:0.192,1:0.297,2:0.223,3:0.188,4:0.101]
+[graph] epoch=21 step=500/785 fusion_gate=0.4431 problem_gate=0.4134 valid_node_ratio=0.4297 rel_w=[0:0.202,1:0.309,2:0.213,3:0.179,4:0.097]
+[graph] epoch=21 step=600/785 fusion_gate=0.4398 problem_gate=0.4139 valid_node_ratio=0.4244 rel_w=[0:0.222,1:0.291,2:0.210,3:0.181,4:0.096]
+[graph] epoch=21 step=700/785 fusion_gate=0.4417 problem_gate=0.4126 valid_node_ratio=0.4416 rel_w=[0:0.206,1:0.304,2:0.215,3:0.184,4:0.091]
+[graph] epoch=21 summary fusion_gate=0.4352 problem_gate=0.4119 valid_node_ratio=0.4350 rel_w=[0:0.203,1:0.278,2:0.215,3:0.207,4:0.098]
+epoch=21  avg_loss=0.1258 elapsed=0h 4m 24s
+--------------------------------
+[train] epoch=22/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=22 step=100/785 fusion_gate=0.4368 problem_gate=0.4106 valid_node_ratio=0.4427 rel_w=[0:0.194,1:0.299,2:0.217,3:0.189,4:0.101]
+[graph] epoch=22 step=200/785 fusion_gate=0.4366 problem_gate=0.4115 valid_node_ratio=0.4242 rel_w=[0:0.179,1:0.311,2:0.209,3:0.196,4:0.104]
+[graph] epoch=22 step=300/785 fusion_gate=0.4345 problem_gate=0.4128 valid_node_ratio=0.4319 rel_w=[0:0.180,1:0.322,2:0.207,3:0.192,4:0.099]
+[graph] epoch=22 step=400/785 fusion_gate=0.4385 problem_gate=0.4109 valid_node_ratio=0.4427 rel_w=[0:0.197,1:0.300,2:0.231,3:0.179,4:0.093]
+[graph] epoch=22 step=500/785 fusion_gate=0.4319 problem_gate=0.4103 valid_node_ratio=0.4505 rel_w=[0:0.203,1:0.292,2:0.221,3:0.190,4:0.094]
+[graph] epoch=22 step=600/785 fusion_gate=0.4361 problem_gate=0.4105 valid_node_ratio=0.4427 rel_w=[0:0.212,1:0.285,2:0.229,3:0.174,4:0.100]
+[graph] epoch=22 step=700/785 fusion_gate=0.4365 problem_gate=0.4097 valid_node_ratio=0.4470 rel_w=[0:0.190,1:0.296,2:0.231,3:0.184,4:0.099]
+[graph] epoch=22 summary fusion_gate=0.4308 problem_gate=0.4148 valid_node_ratio=0.4440 rel_w=[0:0.188,1:0.299,2:0.229,3:0.189,4:0.095]
+epoch=22  avg_loss=0.1207 elapsed=0h 4m 36s
+--------------------------------
+[train] epoch=23/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=23 step=100/785 fusion_gate=0.4403 problem_gate=0.4167 valid_node_ratio=0.4384 rel_w=[0:0.199,1:0.300,2:0.207,3:0.192,4:0.102]
+[graph] epoch=23 step=200/785 fusion_gate=0.4420 problem_gate=0.4129 valid_node_ratio=0.4512 rel_w=[0:0.212,1:0.301,2:0.221,3:0.166,4:0.099]
+[graph] epoch=23 step=300/785 fusion_gate=0.4389 problem_gate=0.4138 valid_node_ratio=0.4457 rel_w=[0:0.193,1:0.315,2:0.220,3:0.169,4:0.102]
+[graph] epoch=23 step=400/785 fusion_gate=0.4376 problem_gate=0.4152 valid_node_ratio=0.4475 rel_w=[0:0.207,1:0.299,2:0.228,3:0.169,4:0.098]
+[graph] epoch=23 step=500/785 fusion_gate=0.4370 problem_gate=0.4150 valid_node_ratio=0.4378 rel_w=[0:0.200,1:0.291,2:0.225,3:0.183,4:0.101]
+[graph] epoch=23 step=600/785 fusion_gate=0.4337 problem_gate=0.4126 valid_node_ratio=0.4377 rel_w=[0:0.171,1:0.311,2:0.218,3:0.202,4:0.097]
+[graph] epoch=23 step=700/785 fusion_gate=0.4339 problem_gate=0.4120 valid_node_ratio=0.4473 rel_w=[0:0.189,1:0.290,2:0.223,3:0.203,4:0.095]
+[graph] epoch=23 summary fusion_gate=0.4351 problem_gate=0.4124 valid_node_ratio=0.4361 rel_w=[0:0.182,1:0.314,2:0.220,3:0.183,4:0.101]
+epoch=23  avg_loss=0.1141 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=24/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=24 step=100/785 fusion_gate=0.4343 problem_gate=0.4116 valid_node_ratio=0.4485 rel_w=[0:0.191,1:0.297,2:0.215,3:0.200,4:0.097]
+[graph] epoch=24 step=200/785 fusion_gate=0.4306 problem_gate=0.4099 valid_node_ratio=0.4522 rel_w=[0:0.183,1:0.280,2:0.229,3:0.211,4:0.097]
+[graph] epoch=24 step=300/785 fusion_gate=0.4303 problem_gate=0.4091 valid_node_ratio=0.4272 rel_w=[0:0.183,1:0.306,2:0.222,3:0.193,4:0.096]
+[graph] epoch=24 step=400/785 fusion_gate=0.4314 problem_gate=0.4086 valid_node_ratio=0.4508 rel_w=[0:0.199,1:0.299,2:0.224,3:0.185,4:0.094]
+[graph] epoch=24 step=500/785 fusion_gate=0.4287 problem_gate=0.4084 valid_node_ratio=0.4234 rel_w=[0:0.181,1:0.300,2:0.223,3:0.203,4:0.093]
+[graph] epoch=24 step=600/785 fusion_gate=0.4264 problem_gate=0.4057 valid_node_ratio=0.4421 rel_w=[0:0.184,1:0.280,2:0.219,3:0.224,4:0.093]
+[graph] epoch=24 step=700/785 fusion_gate=0.4253 problem_gate=0.4053 valid_node_ratio=0.4380 rel_w=[0:0.180,1:0.308,2:0.233,3:0.184,4:0.095]
+[graph] epoch=24 summary fusion_gate=0.4279 problem_gate=0.4065 valid_node_ratio=0.4411 rel_w=[0:0.193,1:0.296,2:0.221,3:0.193,4:0.097]
+epoch=24  avg_loss=0.1094 elapsed=0h 4m 28s
+--------------------------------
+[train] epoch=25/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=25 step=100/785 fusion_gate=0.4310 problem_gate=0.4040 valid_node_ratio=0.4384 rel_w=[0:0.208,1:0.293,2:0.224,3:0.182,4:0.093]
+[graph] epoch=25 step=200/785 fusion_gate=0.4364 problem_gate=0.4063 valid_node_ratio=0.4496 rel_w=[0:0.188,1:0.312,2:0.231,3:0.172,4:0.098]
+[graph] epoch=25 step=300/785 fusion_gate=0.4344 problem_gate=0.4074 valid_node_ratio=0.4432 rel_w=[0:0.187,1:0.292,2:0.219,3:0.203,4:0.100]
+[graph] epoch=25 step=400/785 fusion_gate=0.4375 problem_gate=0.4050 valid_node_ratio=0.4500 rel_w=[0:0.192,1:0.301,2:0.232,3:0.183,4:0.092]
+[graph] epoch=25 step=500/785 fusion_gate=0.4337 problem_gate=0.4054 valid_node_ratio=0.4553 rel_w=[0:0.197,1:0.297,2:0.225,3:0.186,4:0.096]
+[graph] epoch=25 step=600/785 fusion_gate=0.4292 problem_gate=0.4085 valid_node_ratio=0.4309 rel_w=[0:0.187,1:0.311,2:0.214,3:0.192,4:0.096]
+[graph] epoch=25 step=700/785 fusion_gate=0.4294 problem_gate=0.4070 valid_node_ratio=0.4361 rel_w=[0:0.193,1:0.308,2:0.208,3:0.199,4:0.093]
+[graph] epoch=25 summary fusion_gate=0.4268 problem_gate=0.4060 valid_node_ratio=0.4562 rel_w=[0:0.204,1:0.309,2:0.222,3:0.165,4:0.099]
+epoch=25  avg_loss=0.1037 elapsed=0h 4m 36s
+--------------------------------
+729 864 997
+valid_answer_acc_23k 0.7311935807422267 0.8665997993981945
+739 872 1000
+test_answer_acc_23k 0.739 0.872
+1200 1446 1833
+test_answer_acc_ape 0.6546644844517185 0.7888707037643208
+testing time 0h 4m 51s
+------------------------------------------------------
+[save] new_best epoch=25 23k_equation=0.739000 23k_value=0.872000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=25 ape_equation=0.654664 ape_value=0.788871
+[train] epoch=26/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=26 step=100/785 fusion_gate=0.4271 problem_gate=0.4039 valid_node_ratio=0.6090 rel_w=[0:0.368,1:0.118,2:0.244,3:0.107,4:0.163]
+[graph] epoch=26 step=200/785 fusion_gate=0.4230 problem_gate=0.4049 valid_node_ratio=0.4270 rel_w=[0:0.198,1:0.305,2:0.217,3:0.185,4:0.096]
+[graph] epoch=26 step=300/785 fusion_gate=0.4257 problem_gate=0.4051 valid_node_ratio=0.4347 rel_w=[0:0.197,1:0.298,2:0.219,3:0.196,4:0.091]
+[graph] epoch=26 step=400/785 fusion_gate=0.4266 problem_gate=0.4052 valid_node_ratio=0.4533 rel_w=[0:0.194,1:0.279,2:0.238,3:0.191,4:0.098]
+[graph] epoch=26 step=500/785 fusion_gate=0.4250 problem_gate=0.4045 valid_node_ratio=0.4367 rel_w=[0:0.181,1:0.293,2:0.237,3:0.194,4:0.094]
+[graph] epoch=26 step=600/785 fusion_gate=0.4265 problem_gate=0.4069 valid_node_ratio=0.4477 rel_w=[0:0.181,1:0.305,2:0.219,3:0.200,4:0.094]
+[graph] epoch=26 step=700/785 fusion_gate=0.4243 problem_gate=0.4049 valid_node_ratio=0.4324 rel_w=[0:0.195,1:0.318,2:0.200,3:0.200,4:0.087]
+[graph] epoch=26 summary fusion_gate=0.4247 problem_gate=0.4073 valid_node_ratio=0.4351 rel_w=[0:0.185,1:0.303,2:0.206,3:0.213,4:0.093]
+epoch=26  avg_loss=0.1002 elapsed=0h 4m 30s
+--------------------------------
+[train] epoch=27/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=27 step=100/785 fusion_gate=0.4265 problem_gate=0.4049 valid_node_ratio=0.4519 rel_w=[0:0.191,1:0.291,2:0.204,3:0.212,4:0.103]
+[graph] epoch=27 step=200/785 fusion_gate=0.4220 problem_gate=0.4021 valid_node_ratio=0.4429 rel_w=[0:0.189,1:0.313,2:0.209,3:0.196,4:0.093]
+[graph] epoch=27 step=300/785 fusion_gate=0.4283 problem_gate=0.4027 valid_node_ratio=0.4569 rel_w=[0:0.202,1:0.296,2:0.209,3:0.190,4:0.102]
+[graph] epoch=27 step=400/785 fusion_gate=0.4291 problem_gate=0.4031 valid_node_ratio=0.4417 rel_w=[0:0.194,1:0.307,2:0.214,3:0.190,4:0.095]
+[graph] epoch=27 step=500/785 fusion_gate=0.4251 problem_gate=0.3998 valid_node_ratio=0.4380 rel_w=[0:0.207,1:0.263,2:0.238,3:0.197,4:0.094]
+[graph] epoch=27 step=600/785 fusion_gate=0.4262 problem_gate=0.4005 valid_node_ratio=0.4395 rel_w=[0:0.189,1:0.286,2:0.226,3:0.199,4:0.098]
+[graph] epoch=27 step=700/785 fusion_gate=0.4282 problem_gate=0.4035 valid_node_ratio=0.4336 rel_w=[0:0.188,1:0.259,2:0.237,3:0.216,4:0.100]
+[graph] epoch=27 summary fusion_gate=0.4266 problem_gate=0.4024 valid_node_ratio=0.4255 rel_w=[0:0.177,1:0.296,2:0.215,3:0.205,4:0.106]
+epoch=27  avg_loss=0.0965 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=28/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=28 step=100/785 fusion_gate=0.4260 problem_gate=0.4016 valid_node_ratio=0.4441 rel_w=[0:0.197,1:0.290,2:0.210,3:0.203,4:0.100]
+[graph] epoch=28 step=200/785 fusion_gate=0.4241 problem_gate=0.4032 valid_node_ratio=0.4302 rel_w=[0:0.192,1:0.323,2:0.202,3:0.187,4:0.095]
+[graph] epoch=28 step=300/785 fusion_gate=0.4220 problem_gate=0.4041 valid_node_ratio=0.4575 rel_w=[0:0.188,1:0.278,2:0.230,3:0.207,4:0.098]
+[graph] epoch=28 step=400/785 fusion_gate=0.4232 problem_gate=0.4036 valid_node_ratio=0.4376 rel_w=[0:0.192,1:0.288,2:0.230,3:0.194,4:0.096]
+[graph] epoch=28 step=500/785 fusion_gate=0.4212 problem_gate=0.4028 valid_node_ratio=0.4289 rel_w=[0:0.195,1:0.294,2:0.218,3:0.195,4:0.098]
+[graph] epoch=28 step=600/785 fusion_gate=0.4230 problem_gate=0.4004 valid_node_ratio=0.4325 rel_w=[0:0.178,1:0.304,2:0.234,3:0.189,4:0.095]
+[graph] epoch=28 step=700/785 fusion_gate=0.4205 problem_gate=0.4035 valid_node_ratio=0.4351 rel_w=[0:0.180,1:0.285,2:0.231,3:0.204,4:0.100]
+[graph] epoch=28 summary fusion_gate=0.4190 problem_gate=0.4016 valid_node_ratio=0.4422 rel_w=[0:0.187,1:0.282,2:0.227,3:0.201,4:0.104]
+epoch=28  avg_loss=0.0925 elapsed=0h 4m 34s
+--------------------------------
+[train] epoch=29/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=29 step=100/785 fusion_gate=0.4185 problem_gate=0.4012 valid_node_ratio=0.4440 rel_w=[0:0.210,1:0.276,2:0.223,3:0.198,4:0.094]
+[graph] epoch=29 step=200/785 fusion_gate=0.4218 problem_gate=0.4020 valid_node_ratio=0.4372 rel_w=[0:0.200,1:0.297,2:0.218,3:0.191,4:0.095]
+[graph] epoch=29 step=300/785 fusion_gate=0.4185 problem_gate=0.4038 valid_node_ratio=0.4561 rel_w=[0:0.203,1:0.293,2:0.223,3:0.186,4:0.096]
+[graph] epoch=29 step=400/785 fusion_gate=0.4184 problem_gate=0.4014 valid_node_ratio=0.4438 rel_w=[0:0.196,1:0.284,2:0.224,3:0.204,4:0.093]
+[graph] epoch=29 step=500/785 fusion_gate=0.4198 problem_gate=0.4013 valid_node_ratio=0.4411 rel_w=[0:0.204,1:0.285,2:0.216,3:0.206,4:0.089]
+[graph] epoch=29 step=600/785 fusion_gate=0.4145 problem_gate=0.4022 valid_node_ratio=0.4355 rel_w=[0:0.205,1:0.290,2:0.211,3:0.204,4:0.090]
+[graph] epoch=29 step=700/785 fusion_gate=0.4199 problem_gate=0.4007 valid_node_ratio=0.4528 rel_w=[0:0.216,1:0.280,2:0.215,3:0.192,4:0.097]
+[graph] epoch=29 summary fusion_gate=0.4191 problem_gate=0.4025 valid_node_ratio=0.4228 rel_w=[0:0.199,1:0.292,2:0.215,3:0.195,4:0.099]
+epoch=29  avg_loss=0.0887 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=30/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=30 step=100/785 fusion_gate=0.4155 problem_gate=0.4026 valid_node_ratio=0.4548 rel_w=[0:0.206,1:0.291,2:0.217,3:0.184,4:0.102]
+[graph] epoch=30 step=200/785 fusion_gate=0.4147 problem_gate=0.4033 valid_node_ratio=0.4316 rel_w=[0:0.202,1:0.292,2:0.215,3:0.193,4:0.099]
+[graph] epoch=30 step=300/785 fusion_gate=0.4122 problem_gate=0.4022 valid_node_ratio=0.4486 rel_w=[0:0.209,1:0.298,2:0.221,3:0.178,4:0.094]
+[graph] epoch=30 step=400/785 fusion_gate=0.4111 problem_gate=0.4016 valid_node_ratio=0.4412 rel_w=[0:0.207,1:0.287,2:0.236,3:0.183,4:0.087]
+[graph] epoch=30 step=500/785 fusion_gate=0.4094 problem_gate=0.4050 valid_node_ratio=0.4363 rel_w=[0:0.207,1:0.278,2:0.229,3:0.195,4:0.091]
+[graph] epoch=30 step=600/785 fusion_gate=0.4121 problem_gate=0.4048 valid_node_ratio=0.4393 rel_w=[0:0.201,1:0.289,2:0.219,3:0.194,4:0.098]
+[graph] epoch=30 step=700/785 fusion_gate=0.4093 problem_gate=0.4038 valid_node_ratio=0.4508 rel_w=[0:0.204,1:0.291,2:0.223,3:0.178,4:0.104]
+[graph] epoch=30 summary fusion_gate=0.4104 problem_gate=0.4038 valid_node_ratio=0.4436 rel_w=[0:0.210,1:0.294,2:0.229,3:0.164,4:0.102]
+epoch=30  avg_loss=0.0847 elapsed=0h 4m 27s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_030
+726 870 997
+valid_answer_acc_23k 0.728184553660983 0.872617853560682
+745 874 1000
+test_answer_acc_23k 0.745 0.874
+1199 1448 1833
+test_answer_acc_ape 0.6541189307146754 0.789961811238407
+testing time 0h 5m 10s
+------------------------------------------------------
+[save] new_best epoch=30 23k_equation=0.745000 23k_value=0.874000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=30 ape_equation=0.654119 ape_value=0.789962
+[train] epoch=31/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=31 step=100/785 fusion_gate=0.4158 problem_gate=0.3981 valid_node_ratio=0.6149 rel_w=[0:0.351,1:0.121,2:0.222,3:0.108,4:0.198]
+[graph] epoch=31 step=200/785 fusion_gate=0.4166 problem_gate=0.4052 valid_node_ratio=0.4454 rel_w=[0:0.216,1:0.288,2:0.212,3:0.181,4:0.102]
+[graph] epoch=31 step=300/785 fusion_gate=0.4180 problem_gate=0.4058 valid_node_ratio=0.4633 rel_w=[0:0.205,1:0.295,2:0.211,3:0.185,4:0.104]
+[graph] epoch=31 step=400/785 fusion_gate=0.4168 problem_gate=0.4048 valid_node_ratio=0.4350 rel_w=[0:0.184,1:0.306,2:0.211,3:0.196,4:0.103]
+[graph] epoch=31 step=500/785 fusion_gate=0.4189 problem_gate=0.4030 valid_node_ratio=0.4432 rel_w=[0:0.190,1:0.295,2:0.215,3:0.197,4:0.103]
+[graph] epoch=31 step=600/785 fusion_gate=0.4206 problem_gate=0.4026 valid_node_ratio=0.4460 rel_w=[0:0.192,1:0.287,2:0.223,3:0.198,4:0.100]
+[graph] epoch=31 step=700/785 fusion_gate=0.4211 problem_gate=0.4011 valid_node_ratio=0.4289 rel_w=[0:0.184,1:0.293,2:0.223,3:0.197,4:0.102]
+[graph] epoch=31 summary fusion_gate=0.4185 problem_gate=0.4024 valid_node_ratio=0.4279 rel_w=[0:0.185,1:0.297,2:0.225,3:0.192,4:0.102]
+epoch=31  avg_loss=0.0617 elapsed=0h 4m 31s
+--------------------------------
+[train] epoch=32/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=32 step=100/785 fusion_gate=0.4202 problem_gate=0.4026 valid_node_ratio=0.4447 rel_w=[0:0.192,1:0.287,2:0.225,3:0.194,4:0.102]
+[graph] epoch=32 step=200/785 fusion_gate=0.4228 problem_gate=0.4016 valid_node_ratio=0.4265 rel_w=[0:0.186,1:0.298,2:0.221,3:0.193,4:0.102]
+[graph] epoch=32 step=300/785 fusion_gate=0.4207 problem_gate=0.4003 valid_node_ratio=0.4486 rel_w=[0:0.189,1:0.301,2:0.219,3:0.192,4:0.098]
+[graph] epoch=32 step=400/785 fusion_gate=0.4217 problem_gate=0.4011 valid_node_ratio=0.4442 rel_w=[0:0.188,1:0.307,2:0.214,3:0.193,4:0.098]
+[graph] epoch=32 step=500/785 fusion_gate=0.4193 problem_gate=0.3985 valid_node_ratio=0.4358 rel_w=[0:0.180,1:0.293,2:0.216,3:0.211,4:0.100]
+[graph] epoch=32 step=600/785 fusion_gate=0.4231 problem_gate=0.3999 valid_node_ratio=0.4493 rel_w=[0:0.182,1:0.288,2:0.227,3:0.202,4:0.102]
+[graph] epoch=32 step=700/785 fusion_gate=0.4231 problem_gate=0.4024 valid_node_ratio=0.4411 rel_w=[0:0.183,1:0.297,2:0.224,3:0.195,4:0.101]
+[graph] epoch=32 summary fusion_gate=0.4242 problem_gate=0.4035 valid_node_ratio=0.4399 rel_w=[0:0.194,1:0.277,2:0.223,3:0.204,4:0.102]
+epoch=32  avg_loss=0.0507 elapsed=0h 4m 32s
+--------------------------------
+[train] epoch=33/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=33 step=100/785 fusion_gate=0.4239 problem_gate=0.4022 valid_node_ratio=0.4335 rel_w=[0:0.187,1:0.288,2:0.220,3:0.205,4:0.100]
+[graph] epoch=33 step=200/785 fusion_gate=0.4232 problem_gate=0.3990 valid_node_ratio=0.4271 rel_w=[0:0.188,1:0.290,2:0.223,3:0.198,4:0.100]
+[graph] epoch=33 step=300/785 fusion_gate=0.4261 problem_gate=0.4006 valid_node_ratio=0.4413 rel_w=[0:0.198,1:0.266,2:0.225,3:0.206,4:0.105]
+[graph] epoch=33 step=400/785 fusion_gate=0.4273 problem_gate=0.4006 valid_node_ratio=0.4489 rel_w=[0:0.198,1:0.266,2:0.228,3:0.202,4:0.105]
+[graph] epoch=33 step=500/785 fusion_gate=0.4229 problem_gate=0.3991 valid_node_ratio=0.4447 rel_w=[0:0.190,1:0.286,2:0.229,3:0.194,4:0.101]
+[graph] epoch=33 step=600/785 fusion_gate=0.4262 problem_gate=0.3992 valid_node_ratio=0.4406 rel_w=[0:0.186,1:0.286,2:0.236,3:0.191,4:0.101]
+[graph] epoch=33 step=700/785 fusion_gate=0.4255 problem_gate=0.3995 valid_node_ratio=0.4413 rel_w=[0:0.183,1:0.289,2:0.221,3:0.206,4:0.101]
+[graph] epoch=33 summary fusion_gate=0.4228 problem_gate=0.3988 valid_node_ratio=0.4506 rel_w=[0:0.180,1:0.280,2:0.240,3:0.197,4:0.103]
+epoch=33  avg_loss=0.0480 elapsed=0h 4m 31s
+--------------------------------
+[train] epoch=34/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=34 step=100/785 fusion_gate=0.4253 problem_gate=0.3961 valid_node_ratio=0.4378 rel_w=[0:0.175,1:0.297,2:0.228,3:0.197,4:0.104]
+[graph] epoch=34 step=200/785 fusion_gate=0.4240 problem_gate=0.3980 valid_node_ratio=0.4355 rel_w=[0:0.180,1:0.298,2:0.220,3:0.196,4:0.106]
+[graph] epoch=34 step=300/785 fusion_gate=0.4258 problem_gate=0.3974 valid_node_ratio=0.4574 rel_w=[0:0.191,1:0.278,2:0.223,3:0.198,4:0.109]
+[graph] epoch=34 step=400/785 fusion_gate=0.4279 problem_gate=0.3958 valid_node_ratio=0.4477 rel_w=[0:0.202,1:0.265,2:0.221,3:0.209,4:0.104]
+[graph] epoch=34 step=500/785 fusion_gate=0.4232 problem_gate=0.3958 valid_node_ratio=0.4397 rel_w=[0:0.184,1:0.285,2:0.229,3:0.200,4:0.102]
+[graph] epoch=34 step=600/785 fusion_gate=0.4210 problem_gate=0.3962 valid_node_ratio=0.4349 rel_w=[0:0.183,1:0.271,2:0.222,3:0.223,4:0.100]
+[graph] epoch=34 step=700/785 fusion_gate=0.4221 problem_gate=0.3944 valid_node_ratio=0.4365 rel_w=[0:0.192,1:0.277,2:0.224,3:0.203,4:0.104]
+[graph] epoch=34 summary fusion_gate=0.4232 problem_gate=0.3972 valid_node_ratio=0.4479 rel_w=[0:0.200,1:0.274,2:0.222,3:0.200,4:0.104]
+epoch=34  avg_loss=0.0460 elapsed=0h 4m 31s
+--------------------------------
+[train] epoch=35/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=35 step=100/785 fusion_gate=0.4234 problem_gate=0.3977 valid_node_ratio=0.4211 rel_w=[0:0.191,1:0.285,2:0.215,3:0.212,4:0.097]
+[graph] epoch=35 step=200/785 fusion_gate=0.4242 problem_gate=0.3967 valid_node_ratio=0.4400 rel_w=[0:0.194,1:0.285,2:0.217,3:0.207,4:0.097]
+[graph] epoch=35 step=300/785 fusion_gate=0.4239 problem_gate=0.3993 valid_node_ratio=0.4358 rel_w=[0:0.186,1:0.304,2:0.212,3:0.199,4:0.100]
+[graph] epoch=35 step=400/785 fusion_gate=0.4245 problem_gate=0.3980 valid_node_ratio=0.4478 rel_w=[0:0.182,1:0.300,2:0.223,3:0.194,4:0.101]
+[graph] epoch=35 step=500/785 fusion_gate=0.4260 problem_gate=0.3963 valid_node_ratio=0.4358 rel_w=[0:0.186,1:0.298,2:0.235,3:0.185,4:0.096]
+[graph] epoch=35 step=600/785 fusion_gate=0.4236 problem_gate=0.3973 valid_node_ratio=0.4510 rel_w=[0:0.197,1:0.289,2:0.217,3:0.193,4:0.104]
+[graph] epoch=35 step=700/785 fusion_gate=0.4240 problem_gate=0.3997 valid_node_ratio=0.4564 rel_w=[0:0.214,1:0.273,2:0.211,3:0.201,4:0.101]
+[graph] epoch=35 summary fusion_gate=0.4212 problem_gate=0.3976 valid_node_ratio=0.4657 rel_w=[0:0.207,1:0.277,2:0.222,3:0.191,4:0.104]
+epoch=35  avg_loss=0.0452 elapsed=0h 4m 30s
+--------------------------------
+739 870 997
+valid_answer_acc_23k 0.7412236710130391 0.872617853560682
+765 892 1000
+test_answer_acc_23k 0.765 0.892
+1221 1462 1833
+test_answer_acc_ape 0.6661211129296236 0.7975995635570103
+testing time 0h 4m 44s
+------------------------------------------------------
+[save] new_best epoch=35 23k_equation=0.765000 23k_value=0.892000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=36/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=36 step=100/785 fusion_gate=0.4250 problem_gate=0.3908 valid_node_ratio=0.6118 rel_w=[0:0.338,1:0.120,2:0.234,3:0.114,4:0.195]
+[graph] epoch=36 step=200/785 fusion_gate=0.4240 problem_gate=0.3995 valid_node_ratio=0.4377 rel_w=[0:0.196,1:0.273,2:0.227,3:0.202,4:0.103]
+[graph] epoch=36 step=300/785 fusion_gate=0.4255 problem_gate=0.3971 valid_node_ratio=0.4396 rel_w=[0:0.200,1:0.268,2:0.227,3:0.202,4:0.102]
+[graph] epoch=36 step=400/785 fusion_gate=0.4262 problem_gate=0.3973 valid_node_ratio=0.4507 rel_w=[0:0.194,1:0.292,2:0.224,3:0.190,4:0.100]
+[graph] epoch=36 step=500/785 fusion_gate=0.4244 problem_gate=0.3984 valid_node_ratio=0.4464 rel_w=[0:0.196,1:0.292,2:0.223,3:0.189,4:0.099]
+[graph] epoch=36 step=600/785 fusion_gate=0.4252 problem_gate=0.3980 valid_node_ratio=0.4380 rel_w=[0:0.205,1:0.286,2:0.216,3:0.199,4:0.095]
+[graph] epoch=36 step=700/785 fusion_gate=0.4242 problem_gate=0.3984 valid_node_ratio=0.4478 rel_w=[0:0.215,1:0.291,2:0.208,3:0.191,4:0.094]
+[graph] epoch=36 summary fusion_gate=0.4280 problem_gate=0.3981 valid_node_ratio=0.4360 rel_w=[0:0.197,1:0.291,2:0.222,3:0.193,4:0.098]
+epoch=36  avg_loss=0.0432 elapsed=0h 4m 32s
+--------------------------------
+[train] epoch=37/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=37 step=100/785 fusion_gate=0.4252 problem_gate=0.3971 valid_node_ratio=0.4515 rel_w=[0:0.204,1:0.287,2:0.222,3:0.182,4:0.103]
+[graph] epoch=37 step=200/785 fusion_gate=0.4279 problem_gate=0.3977 valid_node_ratio=0.4445 rel_w=[0:0.201,1:0.289,2:0.224,3:0.184,4:0.102]
+[graph] epoch=37 step=300/785 fusion_gate=0.4237 problem_gate=0.3953 valid_node_ratio=0.4465 rel_w=[0:0.193,1:0.297,2:0.214,3:0.196,4:0.100]
+[graph] epoch=37 step=400/785 fusion_gate=0.4224 problem_gate=0.3934 valid_node_ratio=0.4428 rel_w=[0:0.190,1:0.294,2:0.216,3:0.198,4:0.103]
+[graph] epoch=37 step=500/785 fusion_gate=0.4243 problem_gate=0.3939 valid_node_ratio=0.4394 rel_w=[0:0.182,1:0.304,2:0.223,3:0.193,4:0.097]
+[graph] epoch=37 step=600/785 fusion_gate=0.4223 problem_gate=0.3935 valid_node_ratio=0.4459 rel_w=[0:0.191,1:0.283,2:0.234,3:0.193,4:0.100]
+[graph] epoch=37 step=700/785 fusion_gate=0.4226 problem_gate=0.3939 valid_node_ratio=0.4448 rel_w=[0:0.183,1:0.289,2:0.231,3:0.196,4:0.100]
+[graph] epoch=37 summary fusion_gate=0.4262 problem_gate=0.3951 valid_node_ratio=0.4425 rel_w=[0:0.180,1:0.283,2:0.242,3:0.196,4:0.100]
+epoch=37  avg_loss=0.0425 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=38/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=38 step=100/785 fusion_gate=0.4246 problem_gate=0.3939 valid_node_ratio=0.4247 rel_w=[0:0.171,1:0.299,2:0.240,3:0.191,4:0.099]
+[graph] epoch=38 step=200/785 fusion_gate=0.4262 problem_gate=0.3962 valid_node_ratio=0.4521 rel_w=[0:0.172,1:0.289,2:0.237,3:0.199,4:0.102]
+[graph] epoch=38 step=300/785 fusion_gate=0.4274 problem_gate=0.3978 valid_node_ratio=0.4354 rel_w=[0:0.174,1:0.288,2:0.230,3:0.209,4:0.098]
+[graph] epoch=38 step=400/785 fusion_gate=0.4294 problem_gate=0.3965 valid_node_ratio=0.4479 rel_w=[0:0.181,1:0.286,2:0.224,3:0.211,4:0.099]
+[graph] epoch=38 step=500/785 fusion_gate=0.4299 problem_gate=0.3957 valid_node_ratio=0.4399 rel_w=[0:0.178,1:0.283,2:0.241,3:0.201,4:0.097]
+[graph] epoch=38 step=600/785 fusion_gate=0.4288 problem_gate=0.3951 valid_node_ratio=0.4492 rel_w=[0:0.185,1:0.291,2:0.230,3:0.197,4:0.098]
+[graph] epoch=38 step=700/785 fusion_gate=0.4312 problem_gate=0.3947 valid_node_ratio=0.4391 rel_w=[0:0.187,1:0.300,2:0.231,3:0.186,4:0.096]
+[graph] epoch=38 summary fusion_gate=0.4297 problem_gate=0.3975 valid_node_ratio=0.4399 rel_w=[0:0.187,1:0.294,2:0.225,3:0.193,4:0.101]
+epoch=38  avg_loss=0.0410 elapsed=0h 4m 32s
+--------------------------------
+[train] epoch=39/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=39 step=100/785 fusion_gate=0.4276 problem_gate=0.3930 valid_node_ratio=0.4489 rel_w=[0:0.192,1:0.264,2:0.232,3:0.213,4:0.098]
+[graph] epoch=39 step=200/785 fusion_gate=0.4305 problem_gate=0.3936 valid_node_ratio=0.4497 rel_w=[0:0.185,1:0.285,2:0.234,3:0.195,4:0.101]
+[graph] epoch=39 step=300/785 fusion_gate=0.4275 problem_gate=0.3929 valid_node_ratio=0.4317 rel_w=[0:0.173,1:0.308,2:0.223,3:0.198,4:0.098]
+[graph] epoch=39 step=400/785 fusion_gate=0.4267 problem_gate=0.3927 valid_node_ratio=0.4383 rel_w=[0:0.171,1:0.311,2:0.219,3:0.203,4:0.097]
+[graph] epoch=39 step=500/785 fusion_gate=0.4247 problem_gate=0.3939 valid_node_ratio=0.4253 rel_w=[0:0.181,1:0.286,2:0.227,3:0.206,4:0.100]
+[graph] epoch=39 step=600/785 fusion_gate=0.4239 problem_gate=0.3955 valid_node_ratio=0.4421 rel_w=[0:0.186,1:0.291,2:0.224,3:0.198,4:0.102]
+[graph] epoch=39 step=700/785 fusion_gate=0.4236 problem_gate=0.3934 valid_node_ratio=0.4455 rel_w=[0:0.192,1:0.317,2:0.220,3:0.171,4:0.100]
+[graph] epoch=39 summary fusion_gate=0.4222 problem_gate=0.3920 valid_node_ratio=0.4513 rel_w=[0:0.189,1:0.315,2:0.224,3:0.172,4:0.099]
+epoch=39  avg_loss=0.0406 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=40/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=40 step=100/785 fusion_gate=0.4237 problem_gate=0.3910 valid_node_ratio=0.4283 rel_w=[0:0.179,1:0.311,2:0.232,3:0.175,4:0.103]
+[graph] epoch=40 step=200/785 fusion_gate=0.4238 problem_gate=0.3911 valid_node_ratio=0.4433 rel_w=[0:0.185,1:0.302,2:0.230,3:0.179,4:0.104]
+[graph] epoch=40 step=300/785 fusion_gate=0.4201 problem_gate=0.3935 valid_node_ratio=0.4367 rel_w=[0:0.187,1:0.301,2:0.242,3:0.172,4:0.099]
+[graph] epoch=40 step=400/785 fusion_gate=0.4204 problem_gate=0.3890 valid_node_ratio=0.4447 rel_w=[0:0.184,1:0.300,2:0.243,3:0.176,4:0.097]
+[graph] epoch=40 step=500/785 fusion_gate=0.4232 problem_gate=0.3893 valid_node_ratio=0.4343 rel_w=[0:0.189,1:0.288,2:0.244,3:0.185,4:0.095]
+[graph] epoch=40 step=600/785 fusion_gate=0.4211 problem_gate=0.3870 valid_node_ratio=0.4408 rel_w=[0:0.189,1:0.292,2:0.236,3:0.184,4:0.100]
+[graph] epoch=40 step=700/785 fusion_gate=0.4231 problem_gate=0.3892 valid_node_ratio=0.4388 rel_w=[0:0.188,1:0.294,2:0.245,3:0.179,4:0.095]
+[graph] epoch=40 summary fusion_gate=0.4246 problem_gate=0.3896 valid_node_ratio=0.4393 rel_w=[0:0.194,1:0.299,2:0.235,3:0.180,4:0.092]
+epoch=40  avg_loss=0.0385 elapsed=0h 4m 26s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_040
+725 861 997
+valid_answer_acc_23k 0.7271815446339017 0.8635907723169508
+743 874 1000
+test_answer_acc_23k 0.743 0.874
+1230 1479 1833
+test_answer_acc_ape 0.6710310965630114 0.806873977086743
+testing time 0h 4m 59s
+------------------------------------------------------
+[save] keep_best epoch=35 23k_equation=0.765000 23k_value=0.892000
+[save] keep_best_linked_ape epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=41/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=41 step=100/785 fusion_gate=0.4272 problem_gate=0.3815 valid_node_ratio=0.6087 rel_w=[0:0.339,1:0.129,2:0.242,3:0.108,4:0.183]
+[graph] epoch=41 step=200/785 fusion_gate=0.4239 problem_gate=0.3912 valid_node_ratio=0.4241 rel_w=[0:0.179,1:0.284,2:0.240,3:0.205,4:0.092]
+[graph] epoch=41 step=300/785 fusion_gate=0.4273 problem_gate=0.3919 valid_node_ratio=0.4333 rel_w=[0:0.178,1:0.285,2:0.236,3:0.208,4:0.094]
+[graph] epoch=41 step=400/785 fusion_gate=0.4254 problem_gate=0.3898 valid_node_ratio=0.4433 rel_w=[0:0.181,1:0.308,2:0.218,3:0.197,4:0.096]
+[graph] epoch=41 step=500/785 fusion_gate=0.4261 problem_gate=0.3883 valid_node_ratio=0.4415 rel_w=[0:0.189,1:0.282,2:0.236,3:0.195,4:0.099]
+[graph] epoch=41 step=600/785 fusion_gate=0.4252 problem_gate=0.3898 valid_node_ratio=0.4514 rel_w=[0:0.189,1:0.291,2:0.243,3:0.178,4:0.099]
+[graph] epoch=41 step=700/785 fusion_gate=0.4245 problem_gate=0.3901 valid_node_ratio=0.4446 rel_w=[0:0.194,1:0.285,2:0.241,3:0.182,4:0.098]
+[graph] epoch=41 summary fusion_gate=0.4259 problem_gate=0.3903 valid_node_ratio=0.4440 rel_w=[0:0.188,1:0.288,2:0.244,3:0.184,4:0.096]
+epoch=41  avg_loss=0.0378 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=42/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=42 step=100/785 fusion_gate=0.4253 problem_gate=0.3887 valid_node_ratio=0.4313 rel_w=[0:0.182,1:0.318,2:0.227,3:0.180,4:0.093]
+[graph] epoch=42 step=200/785 fusion_gate=0.4255 problem_gate=0.3895 valid_node_ratio=0.4354 rel_w=[0:0.194,1:0.297,2:0.231,3:0.183,4:0.095]
+[graph] epoch=42 step=300/785 fusion_gate=0.4257 problem_gate=0.3878 valid_node_ratio=0.4306 rel_w=[0:0.193,1:0.296,2:0.235,3:0.178,4:0.099]
+[graph] epoch=42 step=400/785 fusion_gate=0.4245 problem_gate=0.3877 valid_node_ratio=0.4516 rel_w=[0:0.197,1:0.291,2:0.237,3:0.175,4:0.099]
+[graph] epoch=42 step=500/785 fusion_gate=0.4217 problem_gate=0.3870 valid_node_ratio=0.4328 rel_w=[0:0.201,1:0.299,2:0.229,3:0.180,4:0.091]
+[graph] epoch=42 step=600/785 fusion_gate=0.4198 problem_gate=0.3885 valid_node_ratio=0.4382 rel_w=[0:0.199,1:0.300,2:0.227,3:0.181,4:0.093]
+[graph] epoch=42 step=700/785 fusion_gate=0.4222 problem_gate=0.3880 valid_node_ratio=0.4295 rel_w=[0:0.206,1:0.311,2:0.217,3:0.173,4:0.094]
+[graph] epoch=42 summary fusion_gate=0.4225 problem_gate=0.3877 valid_node_ratio=0.4583 rel_w=[0:0.211,1:0.309,2:0.211,3:0.172,4:0.096]
+epoch=42  avg_loss=0.0371 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=43/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=43 step=100/785 fusion_gate=0.4239 problem_gate=0.3858 valid_node_ratio=0.4379 rel_w=[0:0.203,1:0.290,2:0.224,3:0.187,4:0.095]
+[graph] epoch=43 step=200/785 fusion_gate=0.4245 problem_gate=0.3859 valid_node_ratio=0.4405 rel_w=[0:0.199,1:0.293,2:0.240,3:0.176,4:0.092]
+[graph] epoch=43 step=300/785 fusion_gate=0.4274 problem_gate=0.3857 valid_node_ratio=0.4436 rel_w=[0:0.206,1:0.283,2:0.236,3:0.182,4:0.092]
+[graph] epoch=43 step=400/785 fusion_gate=0.4259 problem_gate=0.3863 valid_node_ratio=0.4373 rel_w=[0:0.193,1:0.296,2:0.244,3:0.179,4:0.088]
+[graph] epoch=43 step=500/785 fusion_gate=0.4231 problem_gate=0.3846 valid_node_ratio=0.4501 rel_w=[0:0.201,1:0.285,2:0.245,3:0.175,4:0.094]
+[graph] epoch=43 step=600/785 fusion_gate=0.4236 problem_gate=0.3857 valid_node_ratio=0.4542 rel_w=[0:0.194,1:0.286,2:0.240,3:0.184,4:0.096]
+[graph] epoch=43 step=700/785 fusion_gate=0.4253 problem_gate=0.3844 valid_node_ratio=0.4352 rel_w=[0:0.186,1:0.294,2:0.222,3:0.198,4:0.100]
+[graph] epoch=43 summary fusion_gate=0.4231 problem_gate=0.3854 valid_node_ratio=0.4366 rel_w=[0:0.187,1:0.298,2:0.225,3:0.188,4:0.102]
+epoch=43  avg_loss=0.0359 elapsed=0h 4m 21s
+--------------------------------
+[train] epoch=44/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=44 step=100/785 fusion_gate=0.4247 problem_gate=0.3850 valid_node_ratio=0.4384 rel_w=[0:0.189,1:0.303,2:0.220,3:0.187,4:0.100]
+[graph] epoch=44 step=200/785 fusion_gate=0.4239 problem_gate=0.3871 valid_node_ratio=0.4385 rel_w=[0:0.196,1:0.301,2:0.216,3:0.186,4:0.101]
+[graph] epoch=44 step=300/785 fusion_gate=0.4214 problem_gate=0.3864 valid_node_ratio=0.4477 rel_w=[0:0.193,1:0.298,2:0.219,3:0.190,4:0.099]
+[graph] epoch=44 step=400/785 fusion_gate=0.4240 problem_gate=0.3858 valid_node_ratio=0.4524 rel_w=[0:0.184,1:0.299,2:0.219,3:0.195,4:0.103]
+[graph] epoch=44 step=500/785 fusion_gate=0.4256 problem_gate=0.3877 valid_node_ratio=0.4638 rel_w=[0:0.187,1:0.303,2:0.213,3:0.198,4:0.100]
+[graph] epoch=44 step=600/785 fusion_gate=0.4239 problem_gate=0.3886 valid_node_ratio=0.4489 rel_w=[0:0.177,1:0.312,2:0.218,3:0.191,4:0.102]
+[graph] epoch=44 step=700/785 fusion_gate=0.4217 problem_gate=0.3874 valid_node_ratio=0.4309 rel_w=[0:0.185,1:0.309,2:0.221,3:0.187,4:0.098]
+[graph] epoch=44 summary fusion_gate=0.4205 problem_gate=0.3860 valid_node_ratio=0.4397 rel_w=[0:0.194,1:0.286,2:0.230,3:0.190,4:0.100]
+epoch=44  avg_loss=0.0350 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=45/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=45 step=100/785 fusion_gate=0.4227 problem_gate=0.3870 valid_node_ratio=0.4284 rel_w=[0:0.192,1:0.299,2:0.228,3:0.184,4:0.098]
+[graph] epoch=45 step=200/785 fusion_gate=0.4236 problem_gate=0.3857 valid_node_ratio=0.4448 rel_w=[0:0.195,1:0.303,2:0.226,3:0.171,4:0.104]
+[graph] epoch=45 step=300/785 fusion_gate=0.4256 problem_gate=0.3867 valid_node_ratio=0.4268 rel_w=[0:0.194,1:0.288,2:0.234,3:0.177,4:0.108]
+[graph] epoch=45 step=400/785 fusion_gate=0.4241 problem_gate=0.3892 valid_node_ratio=0.4380 rel_w=[0:0.194,1:0.288,2:0.235,3:0.175,4:0.109]
+[graph] epoch=45 step=500/785 fusion_gate=0.4281 problem_gate=0.3901 valid_node_ratio=0.4485 rel_w=[0:0.190,1:0.307,2:0.221,3:0.172,4:0.111]
+[graph] epoch=45 step=600/785 fusion_gate=0.4295 problem_gate=0.3898 valid_node_ratio=0.4438 rel_w=[0:0.185,1:0.290,2:0.238,3:0.180,4:0.107]
+[graph] epoch=45 step=700/785 fusion_gate=0.4233 problem_gate=0.3884 valid_node_ratio=0.4488 rel_w=[0:0.185,1:0.292,2:0.229,3:0.191,4:0.103]
+[graph] epoch=45 summary fusion_gate=0.4214 problem_gate=0.3882 valid_node_ratio=0.4386 rel_w=[0:0.184,1:0.284,2:0.220,3:0.212,4:0.101]
+epoch=45  avg_loss=0.0344 elapsed=0h 4m 22s
+--------------------------------
+735 871 997
+valid_answer_acc_23k 0.7372116349047142 0.8736208625877633
+754 890 1000
+test_answer_acc_23k 0.754 0.89
+1222 1457 1833
+test_answer_acc_ape 0.6666666666666666 0.7948717948717948
+testing time 0h 4m 39s
+------------------------------------------------------
+[save] keep_best epoch=35 23k_equation=0.765000 23k_value=0.892000
+[save] keep_best_linked_ape epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=46/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=46 step=100/785 fusion_gate=0.4262 problem_gate=0.3790 valid_node_ratio=0.6161 rel_w=[0:0.304,1:0.142,2:0.219,3:0.118,4:0.217]
+[graph] epoch=46 step=200/785 fusion_gate=0.4237 problem_gate=0.3902 valid_node_ratio=0.4558 rel_w=[0:0.187,1:0.292,2:0.217,3:0.200,4:0.103]
+[graph] epoch=46 step=300/785 fusion_gate=0.4237 problem_gate=0.3868 valid_node_ratio=0.4293 rel_w=[0:0.179,1:0.311,2:0.220,3:0.193,4:0.096]
+[graph] epoch=46 step=400/785 fusion_gate=0.4193 problem_gate=0.3886 valid_node_ratio=0.4423 rel_w=[0:0.185,1:0.290,2:0.223,3:0.201,4:0.101]
+[graph] epoch=46 step=500/785 fusion_gate=0.4204 problem_gate=0.3874 valid_node_ratio=0.4364 rel_w=[0:0.183,1:0.298,2:0.220,3:0.199,4:0.099]
+[graph] epoch=46 step=600/785 fusion_gate=0.4191 problem_gate=0.3862 valid_node_ratio=0.4552 rel_w=[0:0.184,1:0.299,2:0.217,3:0.195,4:0.105]
+[graph] epoch=46 step=700/785 fusion_gate=0.4178 problem_gate=0.3870 valid_node_ratio=0.4326 rel_w=[0:0.180,1:0.302,2:0.213,3:0.198,4:0.107]
+[graph] epoch=46 summary fusion_gate=0.4196 problem_gate=0.3853 valid_node_ratio=0.4150 rel_w=[0:0.177,1:0.306,2:0.211,3:0.195,4:0.111]
+epoch=46  avg_loss=0.0343 elapsed=0h 4m 22s
+--------------------------------
+[train] epoch=47/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=47 step=100/785 fusion_gate=0.4234 problem_gate=0.3846 valid_node_ratio=0.4473 rel_w=[0:0.182,1:0.299,2:0.223,3:0.181,4:0.114]
+[graph] epoch=47 step=200/785 fusion_gate=0.4183 problem_gate=0.3869 valid_node_ratio=0.4413 rel_w=[0:0.191,1:0.299,2:0.226,3:0.173,4:0.110]
+[graph] epoch=47 step=300/785 fusion_gate=0.4189 problem_gate=0.3886 valid_node_ratio=0.4446 rel_w=[0:0.200,1:0.305,2:0.216,3:0.175,4:0.104]
+[graph] epoch=47 step=400/785 fusion_gate=0.4219 problem_gate=0.3890 valid_node_ratio=0.4412 rel_w=[0:0.190,1:0.317,2:0.211,3:0.178,4:0.103]
+[graph] epoch=47 step=500/785 fusion_gate=0.4233 problem_gate=0.3894 valid_node_ratio=0.4379 rel_w=[0:0.181,1:0.307,2:0.227,3:0.184,4:0.101]
+[graph] epoch=47 step=600/785 fusion_gate=0.4174 problem_gate=0.3834 valid_node_ratio=0.4420 rel_w=[0:0.177,1:0.294,2:0.241,3:0.190,4:0.098]
+[graph] epoch=47 step=700/785 fusion_gate=0.4166 problem_gate=0.3859 valid_node_ratio=0.4470 rel_w=[0:0.179,1:0.309,2:0.230,3:0.186,4:0.097]
+[graph] epoch=47 summary fusion_gate=0.4224 problem_gate=0.3876 valid_node_ratio=0.4351 rel_w=[0:0.184,1:0.297,2:0.225,3:0.192,4:0.101]
+epoch=47  avg_loss=0.0330 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=48/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=48 step=100/785 fusion_gate=0.4214 problem_gate=0.3888 valid_node_ratio=0.4614 rel_w=[0:0.185,1:0.299,2:0.216,3:0.190,4:0.110]
+[graph] epoch=48 step=200/785 fusion_gate=0.4235 problem_gate=0.3879 valid_node_ratio=0.4377 rel_w=[0:0.186,1:0.302,2:0.209,3:0.196,4:0.107]
+[graph] epoch=48 step=300/785 fusion_gate=0.4232 problem_gate=0.3886 valid_node_ratio=0.4413 rel_w=[0:0.190,1:0.299,2:0.207,3:0.194,4:0.109]
+[graph] epoch=48 step=400/785 fusion_gate=0.4214 problem_gate=0.3872 valid_node_ratio=0.4420 rel_w=[0:0.181,1:0.318,2:0.206,3:0.192,4:0.103]
+[graph] epoch=48 step=500/785 fusion_gate=0.4196 problem_gate=0.3886 valid_node_ratio=0.4275 rel_w=[0:0.172,1:0.340,2:0.203,3:0.180,4:0.105]
+[graph] epoch=48 step=600/785 fusion_gate=0.4229 problem_gate=0.3862 valid_node_ratio=0.4404 rel_w=[0:0.174,1:0.297,2:0.219,3:0.208,4:0.103]
+[graph] epoch=48 step=700/785 fusion_gate=0.4235 problem_gate=0.3867 valid_node_ratio=0.4378 rel_w=[0:0.178,1:0.280,2:0.228,3:0.208,4:0.105]
+[graph] epoch=48 summary fusion_gate=0.4219 problem_gate=0.3871 valid_node_ratio=0.4436 rel_w=[0:0.184,1:0.304,2:0.217,3:0.190,4:0.104]
+epoch=48  avg_loss=0.0320 elapsed=0h 4m 23s
+--------------------------------
+[train] epoch=49/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=49 step=100/785 fusion_gate=0.4216 problem_gate=0.3878 valid_node_ratio=0.4325 rel_w=[0:0.185,1:0.294,2:0.218,3:0.194,4:0.110]
+[graph] epoch=49 step=200/785 fusion_gate=0.4194 problem_gate=0.3853 valid_node_ratio=0.4393 rel_w=[0:0.192,1:0.277,2:0.226,3:0.200,4:0.105]
+[graph] epoch=49 step=300/785 fusion_gate=0.4175 problem_gate=0.3873 valid_node_ratio=0.4522 rel_w=[0:0.186,1:0.291,2:0.221,3:0.197,4:0.104]
+[graph] epoch=49 step=400/785 fusion_gate=0.4186 problem_gate=0.3869 valid_node_ratio=0.4290 rel_w=[0:0.181,1:0.312,2:0.225,3:0.181,4:0.100]
+[graph] epoch=49 step=500/785 fusion_gate=0.4192 problem_gate=0.3885 valid_node_ratio=0.4291 rel_w=[0:0.203,1:0.310,2:0.220,3:0.170,4:0.098]
+[graph] epoch=49 step=600/785 fusion_gate=0.4210 problem_gate=0.3884 valid_node_ratio=0.4393 rel_w=[0:0.205,1:0.304,2:0.220,3:0.173,4:0.099]
+[graph] epoch=49 step=700/785 fusion_gate=0.4211 problem_gate=0.3886 valid_node_ratio=0.4362 rel_w=[0:0.187,1:0.324,2:0.214,3:0.170,4:0.104]
+[graph] epoch=49 summary fusion_gate=0.4230 problem_gate=0.3884 valid_node_ratio=0.4302 rel_w=[0:0.182,1:0.324,2:0.215,3:0.178,4:0.101]
+epoch=49  avg_loss=0.0315 elapsed=0h 4m 24s
+--------------------------------
+[train] epoch=50/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=50 step=100/785 fusion_gate=0.4251 problem_gate=0.3868 valid_node_ratio=0.4381 rel_w=[0:0.176,1:0.327,2:0.208,3:0.184,4:0.105]
+[graph] epoch=50 step=200/785 fusion_gate=0.4229 problem_gate=0.3912 valid_node_ratio=0.4542 rel_w=[0:0.180,1:0.299,2:0.206,3:0.205,4:0.110]
+[graph] epoch=50 step=300/785 fusion_gate=0.4204 problem_gate=0.3897 valid_node_ratio=0.4359 rel_w=[0:0.173,1:0.305,2:0.215,3:0.202,4:0.104]
+[graph] epoch=50 step=400/785 fusion_gate=0.4226 problem_gate=0.3901 valid_node_ratio=0.4296 rel_w=[0:0.176,1:0.314,2:0.218,3:0.193,4:0.099]
+[graph] epoch=50 step=500/785 fusion_gate=0.4219 problem_gate=0.3906 valid_node_ratio=0.4494 rel_w=[0:0.171,1:0.294,2:0.230,3:0.199,4:0.106]
+[graph] epoch=50 step=600/785 fusion_gate=0.4230 problem_gate=0.3904 valid_node_ratio=0.4435 rel_w=[0:0.179,1:0.286,2:0.225,3:0.203,4:0.107]
+[graph] epoch=50 step=700/785 fusion_gate=0.4253 problem_gate=0.3903 valid_node_ratio=0.4470 rel_w=[0:0.187,1:0.276,2:0.228,3:0.204,4:0.105]
+[graph] epoch=50 summary fusion_gate=0.4246 problem_gate=0.3920 valid_node_ratio=0.4378 rel_w=[0:0.171,1:0.290,2:0.237,3:0.198,4:0.104]
+epoch=50  avg_loss=0.0319 elapsed=0h 4m 23s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_050
+750 881 997
+valid_answer_acc_23k 0.7522567703109327 0.8836509528585758
+763 890 1000
+test_answer_acc_23k 0.763 0.89
+1227 1467 1833
+test_answer_acc_ape 0.6693944353518821 0.8003273322422259
+testing time 0h 4m 48s
+------------------------------------------------------
+[save] keep_best epoch=35 23k_equation=0.765000 23k_value=0.892000
+[save] keep_best_linked_ape epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=51/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=51 step=100/785 fusion_gate=0.4269 problem_gate=0.3835 valid_node_ratio=0.6228 rel_w=[0:0.292,1:0.125,2:0.250,3:0.118,4:0.216]
+[graph] epoch=51 step=200/785 fusion_gate=0.4216 problem_gate=0.3901 valid_node_ratio=0.4351 rel_w=[0:0.179,1:0.286,2:0.233,3:0.200,4:0.101]
+[graph] epoch=51 step=300/785 fusion_gate=0.4249 problem_gate=0.3898 valid_node_ratio=0.4563 rel_w=[0:0.187,1:0.276,2:0.240,3:0.193,4:0.104]
+[graph] epoch=51 step=400/785 fusion_gate=0.4214 problem_gate=0.3897 valid_node_ratio=0.4437 rel_w=[0:0.185,1:0.290,2:0.230,3:0.188,4:0.107]
+[graph] epoch=51 step=500/785 fusion_gate=0.4230 problem_gate=0.3899 valid_node_ratio=0.4466 rel_w=[0:0.185,1:0.286,2:0.239,3:0.186,4:0.104]
+[graph] epoch=51 step=600/785 fusion_gate=0.4241 problem_gate=0.3892 valid_node_ratio=0.4445 rel_w=[0:0.189,1:0.276,2:0.245,3:0.185,4:0.105]
+[graph] epoch=51 step=700/785 fusion_gate=0.4234 problem_gate=0.3871 valid_node_ratio=0.4545 rel_w=[0:0.190,1:0.292,2:0.234,3:0.177,4:0.108]
+[graph] epoch=51 summary fusion_gate=0.4192 problem_gate=0.3862 valid_node_ratio=0.4344 rel_w=[0:0.182,1:0.297,2:0.223,3:0.192,4:0.105]
+epoch=51  avg_loss=0.0311 elapsed=0h 4m 21s
+--------------------------------
+[train] epoch=52/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=52 step=100/785 fusion_gate=0.4212 problem_gate=0.3876 valid_node_ratio=0.4377 rel_w=[0:0.192,1:0.302,2:0.212,3:0.192,4:0.103]
+[graph] epoch=52 step=200/785 fusion_gate=0.4234 problem_gate=0.3869 valid_node_ratio=0.4295 rel_w=[0:0.189,1:0.299,2:0.211,3:0.198,4:0.103]
+[graph] epoch=52 step=300/785 fusion_gate=0.4270 problem_gate=0.3871 valid_node_ratio=0.4407 rel_w=[0:0.183,1:0.285,2:0.223,3:0.200,4:0.110]
+[graph] epoch=52 step=400/785 fusion_gate=0.4261 problem_gate=0.3867 valid_node_ratio=0.4503 rel_w=[0:0.178,1:0.289,2:0.232,3:0.188,4:0.112]
+[graph] epoch=52 step=500/785 fusion_gate=0.4231 problem_gate=0.3864 valid_node_ratio=0.4498 rel_w=[0:0.185,1:0.299,2:0.218,3:0.195,4:0.103]
+[graph] epoch=52 step=600/785 fusion_gate=0.4227 problem_gate=0.3849 valid_node_ratio=0.4589 rel_w=[0:0.172,1:0.327,2:0.227,3:0.176,4:0.098]
+[graph] epoch=52 step=700/785 fusion_gate=0.4222 problem_gate=0.3834 valid_node_ratio=0.4342 rel_w=[0:0.176,1:0.305,2:0.230,3:0.193,4:0.096]
+[graph] epoch=52 summary fusion_gate=0.4225 problem_gate=0.3862 valid_node_ratio=0.4336 rel_w=[0:0.177,1:0.294,2:0.234,3:0.191,4:0.103]
+epoch=52  avg_loss=0.0317 elapsed=0h 4m 23s
+--------------------------------
+[train] epoch=53/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=53 step=100/785 fusion_gate=0.4190 problem_gate=0.3837 valid_node_ratio=0.4359 rel_w=[0:0.190,1:0.278,2:0.241,3:0.187,4:0.104]
+[graph] epoch=53 step=200/785 fusion_gate=0.4197 problem_gate=0.3837 valid_node_ratio=0.4353 rel_w=[0:0.189,1:0.299,2:0.233,3:0.178,4:0.102]
+[graph] epoch=53 step=300/785 fusion_gate=0.4231 problem_gate=0.3825 valid_node_ratio=0.4481 rel_w=[0:0.190,1:0.275,2:0.258,3:0.172,4:0.104]
+[graph] epoch=53 step=400/785 fusion_gate=0.4218 problem_gate=0.3822 valid_node_ratio=0.4318 rel_w=[0:0.200,1:0.270,2:0.241,3:0.182,4:0.107]
+[graph] epoch=53 step=500/785 fusion_gate=0.4236 problem_gate=0.3835 valid_node_ratio=0.4354 rel_w=[0:0.202,1:0.284,2:0.232,3:0.174,4:0.108]
+[graph] epoch=53 step=600/785 fusion_gate=0.4212 problem_gate=0.3833 valid_node_ratio=0.4418 rel_w=[0:0.209,1:0.279,2:0.224,3:0.175,4:0.113]
+[graph] epoch=53 step=700/785 fusion_gate=0.4230 problem_gate=0.3855 valid_node_ratio=0.4424 rel_w=[0:0.195,1:0.284,2:0.228,3:0.182,4:0.111]
+[graph] epoch=53 summary fusion_gate=0.4230 problem_gate=0.3851 valid_node_ratio=0.4520 rel_w=[0:0.193,1:0.288,2:0.244,3:0.174,4:0.101]
+epoch=53  avg_loss=0.0296 elapsed=0h 4m 27s
+--------------------------------
+[train] epoch=54/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=54 step=100/785 fusion_gate=0.4213 problem_gate=0.3820 valid_node_ratio=0.4328 rel_w=[0:0.192,1:0.305,2:0.232,3:0.173,4:0.098]
+[graph] epoch=54 step=200/785 fusion_gate=0.4213 problem_gate=0.3840 valid_node_ratio=0.4438 rel_w=[0:0.191,1:0.314,2:0.218,3:0.177,4:0.100]
+[graph] epoch=54 step=300/785 fusion_gate=0.4221 problem_gate=0.3841 valid_node_ratio=0.4443 rel_w=[0:0.195,1:0.313,2:0.222,3:0.167,4:0.103]
+[graph] epoch=54 step=400/785 fusion_gate=0.4229 problem_gate=0.3821 valid_node_ratio=0.4496 rel_w=[0:0.202,1:0.296,2:0.229,3:0.177,4:0.097]
+[graph] epoch=54 step=500/785 fusion_gate=0.4217 problem_gate=0.3810 valid_node_ratio=0.4542 rel_w=[0:0.191,1:0.290,2:0.244,3:0.173,4:0.101]
+[graph] epoch=54 step=600/785 fusion_gate=0.4237 problem_gate=0.3837 valid_node_ratio=0.4347 rel_w=[0:0.193,1:0.288,2:0.231,3:0.188,4:0.100]
+[graph] epoch=54 step=700/785 fusion_gate=0.4265 problem_gate=0.3845 valid_node_ratio=0.4469 rel_w=[0:0.206,1:0.283,2:0.225,3:0.183,4:0.104]
+[graph] epoch=54 summary fusion_gate=0.4287 problem_gate=0.3860 valid_node_ratio=0.4438 rel_w=[0:0.200,1:0.275,2:0.231,3:0.191,4:0.104]
+epoch=54  avg_loss=0.0292 elapsed=0h 4m 25s
+--------------------------------
+[train] epoch=55/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=55 step=100/785 fusion_gate=0.4262 problem_gate=0.3830 valid_node_ratio=0.4501 rel_w=[0:0.201,1:0.273,2:0.241,3:0.182,4:0.103]
+[graph] epoch=55 step=200/785 fusion_gate=0.4258 problem_gate=0.3820 valid_node_ratio=0.4420 rel_w=[0:0.196,1:0.287,2:0.238,3:0.178,4:0.101]
+[graph] epoch=55 step=300/785 fusion_gate=0.4225 problem_gate=0.3823 valid_node_ratio=0.4503 rel_w=[0:0.199,1:0.271,2:0.248,3:0.180,4:0.101]
+[graph] epoch=55 step=400/785 fusion_gate=0.4245 problem_gate=0.3839 valid_node_ratio=0.4334 rel_w=[0:0.192,1:0.292,2:0.240,3:0.174,4:0.102]
+[graph] epoch=55 step=500/785 fusion_gate=0.4217 problem_gate=0.3857 valid_node_ratio=0.4376 rel_w=[0:0.191,1:0.298,2:0.234,3:0.174,4:0.104]
+[graph] epoch=55 step=600/785 fusion_gate=0.4240 problem_gate=0.3856 valid_node_ratio=0.4424 rel_w=[0:0.192,1:0.291,2:0.238,3:0.173,4:0.106]
+[graph] epoch=55 step=700/785 fusion_gate=0.4258 problem_gate=0.3863 valid_node_ratio=0.4310 rel_w=[0:0.183,1:0.305,2:0.235,3:0.171,4:0.106]
+[graph] epoch=55 summary fusion_gate=0.4256 problem_gate=0.3872 valid_node_ratio=0.4341 rel_w=[0:0.180,1:0.290,2:0.230,3:0.189,4:0.111]
+epoch=55  avg_loss=0.0295 elapsed=0h 4m 24s
+--------------------------------
+740 878 997
+valid_answer_acc_23k 0.7422266800401204 0.880641925777332
+759 889 1000
+test_answer_acc_23k 0.759 0.889
+1212 1468 1833
+test_answer_acc_ape 0.6612111292962357 0.800872885979269
+testing time 0h 4m 43s
+------------------------------------------------------
+[save] keep_best epoch=35 23k_equation=0.765000 23k_value=0.892000
+[save] keep_best_linked_ape epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=56/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=56 step=100/785 fusion_gate=0.4294 problem_gate=0.3783 valid_node_ratio=0.6221 rel_w=[0:0.288,1:0.130,2:0.244,3:0.115,4:0.223]
+[graph] epoch=56 step=200/785 fusion_gate=0.4250 problem_gate=0.3862 valid_node_ratio=0.4436 rel_w=[0:0.179,1:0.312,2:0.223,3:0.174,4:0.112]
+[graph] epoch=56 step=300/785 fusion_gate=0.4253 problem_gate=0.3867 valid_node_ratio=0.4444 rel_w=[0:0.177,1:0.315,2:0.227,3:0.176,4:0.105]
+[graph] epoch=56 step=400/785 fusion_gate=0.4259 problem_gate=0.3851 valid_node_ratio=0.4370 rel_w=[0:0.188,1:0.300,2:0.232,3:0.175,4:0.105]
+[graph] epoch=56 step=500/785 fusion_gate=0.4227 problem_gate=0.3822 valid_node_ratio=0.4312 rel_w=[0:0.191,1:0.301,2:0.232,3:0.169,4:0.107]
+[graph] epoch=56 step=600/785 fusion_gate=0.4247 problem_gate=0.3830 valid_node_ratio=0.4335 rel_w=[0:0.197,1:0.297,2:0.238,3:0.162,4:0.106]
+[graph] epoch=56 step=700/785 fusion_gate=0.4228 problem_gate=0.3840 valid_node_ratio=0.4428 rel_w=[0:0.192,1:0.315,2:0.229,3:0.163,4:0.101]
+[graph] epoch=56 summary fusion_gate=0.4229 problem_gate=0.3849 valid_node_ratio=0.4560 rel_w=[0:0.203,1:0.282,2:0.244,3:0.166,4:0.106]
+epoch=56  avg_loss=0.0282 elapsed=0h 4m 21s
+--------------------------------
+[train] epoch=57/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=57 step=100/785 fusion_gate=0.4237 problem_gate=0.3860 valid_node_ratio=0.4367 rel_w=[0:0.195,1:0.279,2:0.248,3:0.174,4:0.104]
+[graph] epoch=57 step=200/785 fusion_gate=0.4216 problem_gate=0.3838 valid_node_ratio=0.4452 rel_w=[0:0.186,1:0.299,2:0.237,3:0.178,4:0.099]
+[graph] epoch=57 step=300/785 fusion_gate=0.4203 problem_gate=0.3831 valid_node_ratio=0.4409 rel_w=[0:0.183,1:0.322,2:0.231,3:0.167,4:0.097]
+[graph] epoch=57 step=400/785 fusion_gate=0.4194 problem_gate=0.3834 valid_node_ratio=0.4257 rel_w=[0:0.179,1:0.329,2:0.219,3:0.176,4:0.096]
+[graph] epoch=57 step=500/785 fusion_gate=0.4182 problem_gate=0.3838 valid_node_ratio=0.4360 rel_w=[0:0.181,1:0.325,2:0.218,3:0.174,4:0.101]
+[graph] epoch=57 step=600/785 fusion_gate=0.4189 problem_gate=0.3834 valid_node_ratio=0.4386 rel_w=[0:0.180,1:0.305,2:0.248,3:0.174,4:0.093]
+[graph] epoch=57 step=700/785 fusion_gate=0.4188 problem_gate=0.3853 valid_node_ratio=0.4358 rel_w=[0:0.173,1:0.307,2:0.256,3:0.175,4:0.089]
+[graph] epoch=57 summary fusion_gate=0.4200 problem_gate=0.3864 valid_node_ratio=0.4408 rel_w=[0:0.184,1:0.311,2:0.248,3:0.171,4:0.087]
+epoch=57  avg_loss=0.0273 elapsed=0h 4m 22s
+--------------------------------
+[train] epoch=58/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=58 step=100/785 fusion_gate=0.4201 problem_gate=0.3856 valid_node_ratio=0.4314 rel_w=[0:0.191,1:0.290,2:0.261,3:0.168,4:0.090]
+[graph] epoch=58 step=200/785 fusion_gate=0.4201 problem_gate=0.3878 valid_node_ratio=0.4436 rel_w=[0:0.200,1:0.292,2:0.240,3:0.173,4:0.095]
+[graph] epoch=58 step=300/785 fusion_gate=0.4219 problem_gate=0.3864 valid_node_ratio=0.4310 rel_w=[0:0.200,1:0.305,2:0.236,3:0.164,4:0.095]
+[graph] epoch=58 step=400/785 fusion_gate=0.4215 problem_gate=0.3853 valid_node_ratio=0.4346 rel_w=[0:0.194,1:0.324,2:0.232,3:0.158,4:0.092]
+[graph] epoch=58 step=500/785 fusion_gate=0.4210 problem_gate=0.3857 valid_node_ratio=0.4316 rel_w=[0:0.197,1:0.306,2:0.231,3:0.169,4:0.096]
+[graph] epoch=58 step=600/785 fusion_gate=0.4213 problem_gate=0.3840 valid_node_ratio=0.4256 rel_w=[0:0.185,1:0.297,2:0.239,3:0.177,4:0.103]
+[graph] epoch=58 step=700/785 fusion_gate=0.4207 problem_gate=0.3834 valid_node_ratio=0.4384 rel_w=[0:0.184,1:0.296,2:0.237,3:0.176,4:0.107]
+[graph] epoch=58 summary fusion_gate=0.4211 problem_gate=0.3842 valid_node_ratio=0.4329 rel_w=[0:0.183,1:0.291,2:0.240,3:0.181,4:0.105]
+epoch=58  avg_loss=0.0282 elapsed=0h 4m 28s
+--------------------------------
+[train] epoch=59/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=59 step=100/785 fusion_gate=0.4233 problem_gate=0.3862 valid_node_ratio=0.4436 rel_w=[0:0.178,1:0.273,2:0.253,3:0.192,4:0.104]
+[graph] epoch=59 step=200/785 fusion_gate=0.4222 problem_gate=0.3863 valid_node_ratio=0.4413 rel_w=[0:0.178,1:0.292,2:0.234,3:0.193,4:0.103]
+[graph] epoch=59 step=300/785 fusion_gate=0.4216 problem_gate=0.3879 valid_node_ratio=0.4477 rel_w=[0:0.173,1:0.307,2:0.238,3:0.180,4:0.101]
+[graph] epoch=59 step=400/785 fusion_gate=0.4188 problem_gate=0.3879 valid_node_ratio=0.4338 rel_w=[0:0.188,1:0.289,2:0.236,3:0.189,4:0.097]
+[graph] epoch=59 step=500/785 fusion_gate=0.4193 problem_gate=0.3878 valid_node_ratio=0.4477 rel_w=[0:0.210,1:0.278,2:0.228,3:0.184,4:0.099]
+[graph] epoch=59 step=600/785 fusion_gate=0.4186 problem_gate=0.3885 valid_node_ratio=0.4560 rel_w=[0:0.204,1:0.306,2:0.213,3:0.173,4:0.104]
+[graph] epoch=59 step=700/785 fusion_gate=0.4195 problem_gate=0.3873 valid_node_ratio=0.4475 rel_w=[0:0.190,1:0.321,2:0.217,3:0.167,4:0.105]
+[graph] epoch=59 summary fusion_gate=0.4194 problem_gate=0.3866 valid_node_ratio=0.4361 rel_w=[0:0.204,1:0.313,2:0.210,3:0.168,4:0.106]
+epoch=59  avg_loss=0.0284 elapsed=0h 4m 23s
+--------------------------------
+[train] epoch=60/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=60 step=100/785 fusion_gate=0.4211 problem_gate=0.3882 valid_node_ratio=0.4404 rel_w=[0:0.203,1:0.313,2:0.217,3:0.162,4:0.106]
+[graph] epoch=60 step=200/785 fusion_gate=0.4190 problem_gate=0.3849 valid_node_ratio=0.4452 rel_w=[0:0.209,1:0.294,2:0.222,3:0.169,4:0.106]
+[graph] epoch=60 step=300/785 fusion_gate=0.4217 problem_gate=0.3866 valid_node_ratio=0.4519 rel_w=[0:0.207,1:0.292,2:0.219,3:0.173,4:0.108]
+[graph] epoch=60 step=400/785 fusion_gate=0.4207 problem_gate=0.3871 valid_node_ratio=0.4276 rel_w=[0:0.198,1:0.291,2:0.220,3:0.185,4:0.107]
+[graph] epoch=60 step=500/785 fusion_gate=0.4233 problem_gate=0.3844 valid_node_ratio=0.4441 rel_w=[0:0.202,1:0.287,2:0.220,3:0.181,4:0.109]
+[graph] epoch=60 step=600/785 fusion_gate=0.4191 problem_gate=0.3853 valid_node_ratio=0.4387 rel_w=[0:0.197,1:0.286,2:0.236,3:0.175,4:0.105]
+[graph] epoch=60 step=700/785 fusion_gate=0.4207 problem_gate=0.3838 valid_node_ratio=0.4532 rel_w=[0:0.202,1:0.282,2:0.236,3:0.177,4:0.104]
+[graph] epoch=60 summary fusion_gate=0.4149 problem_gate=0.3843 valid_node_ratio=0.4356 rel_w=[0:0.188,1:0.305,2:0.229,3:0.178,4:0.100]
+epoch=60  avg_loss=0.0268 elapsed=0h 4m 28s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_060
+738 864 997
+valid_answer_acc_23k 0.7402206619859579 0.8665997993981945
+769 888 1000
+test_answer_acc_23k 0.769 0.888
+1214 1460 1833
+test_answer_acc_ape 0.6623022367703219 0.7965084560829242
+testing time 0h 4m 56s
+------------------------------------------------------
+[save] keep_best epoch=35 23k_equation=0.765000 23k_value=0.892000
+[save] keep_best_linked_ape epoch=35 ape_equation=0.666121 ape_value=0.797600
+[train] epoch=61/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=61 step=100/785 fusion_gate=0.4161 problem_gate=0.3754 valid_node_ratio=0.6356 rel_w=[0:0.312,1:0.129,2:0.250,3:0.111,4:0.198]
+[graph] epoch=61 step=200/785 fusion_gate=0.4181 problem_gate=0.3850 valid_node_ratio=0.4484 rel_w=[0:0.194,1:0.303,2:0.224,3:0.175,4:0.104]
+[graph] epoch=61 step=300/785 fusion_gate=0.4172 problem_gate=0.3855 valid_node_ratio=0.4349 rel_w=[0:0.190,1:0.304,2:0.219,3:0.183,4:0.103]
+[graph] epoch=61 step=400/785 fusion_gate=0.4175 problem_gate=0.3846 valid_node_ratio=0.4400 rel_w=[0:0.186,1:0.306,2:0.222,3:0.182,4:0.104]
+[graph] epoch=61 step=500/785 fusion_gate=0.4190 problem_gate=0.3837 valid_node_ratio=0.4451 rel_w=[0:0.192,1:0.297,2:0.227,3:0.181,4:0.103]
+[graph] epoch=61 step=600/785 fusion_gate=0.4190 problem_gate=0.3842 valid_node_ratio=0.4454 rel_w=[0:0.187,1:0.297,2:0.232,3:0.181,4:0.103]
+[graph] epoch=61 step=700/785 fusion_gate=0.4194 problem_gate=0.3847 valid_node_ratio=0.4457 rel_w=[0:0.190,1:0.287,2:0.235,3:0.183,4:0.105]
+[graph] epoch=61 summary fusion_gate=0.4204 problem_gate=0.3855 valid_node_ratio=0.4405 rel_w=[0:0.187,1:0.284,2:0.239,3:0.188,4:0.102]
+epoch=61  avg_loss=0.0210 elapsed=0h 4m 24s
+--------------------------------
+[train] epoch=62/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=62 step=100/785 fusion_gate=0.4197 problem_gate=0.3842 valid_node_ratio=0.4336 rel_w=[0:0.182,1:0.291,2:0.235,3:0.191,4:0.101]
+[graph] epoch=62 step=200/785 fusion_gate=0.4199 problem_gate=0.3847 valid_node_ratio=0.4455 rel_w=[0:0.182,1:0.295,2:0.238,3:0.183,4:0.102]
+[graph] epoch=62 step=300/785 fusion_gate=0.4174 problem_gate=0.3836 valid_node_ratio=0.4528 rel_w=[0:0.184,1:0.314,2:0.230,3:0.175,4:0.098]
+[graph] epoch=62 step=400/785 fusion_gate=0.4169 problem_gate=0.3817 valid_node_ratio=0.4351 rel_w=[0:0.179,1:0.322,2:0.221,3:0.180,4:0.097]
+[graph] epoch=62 step=500/785 fusion_gate=0.4173 problem_gate=0.3817 valid_node_ratio=0.4392 rel_w=[0:0.184,1:0.306,2:0.228,3:0.184,4:0.098]
+[graph] epoch=62 step=600/785 fusion_gate=0.4196 problem_gate=0.3833 valid_node_ratio=0.4489 rel_w=[0:0.192,1:0.291,2:0.230,3:0.186,4:0.101]
+[graph] epoch=62 step=700/785 fusion_gate=0.4203 problem_gate=0.3832 valid_node_ratio=0.4217 rel_w=[0:0.185,1:0.307,2:0.226,3:0.182,4:0.100]
+[graph] epoch=62 summary fusion_gate=0.4209 problem_gate=0.3839 valid_node_ratio=0.4580 rel_w=[0:0.194,1:0.300,2:0.224,3:0.179,4:0.104]
+epoch=62  avg_loss=0.0179 elapsed=0h 4m 26s
+--------------------------------
+[train] epoch=63/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=63 step=100/785 fusion_gate=0.4237 problem_gate=0.3832 valid_node_ratio=0.4511 rel_w=[0:0.196,1:0.297,2:0.226,3:0.180,4:0.101]
+[graph] epoch=63 step=200/785 fusion_gate=0.4245 problem_gate=0.3848 valid_node_ratio=0.4383 rel_w=[0:0.194,1:0.294,2:0.225,3:0.184,4:0.103]
+[graph] epoch=63 step=300/785 fusion_gate=0.4242 problem_gate=0.3843 valid_node_ratio=0.4408 rel_w=[0:0.193,1:0.296,2:0.224,3:0.184,4:0.104]
+[graph] epoch=63 step=400/785 fusion_gate=0.4233 problem_gate=0.3829 valid_node_ratio=0.4414 rel_w=[0:0.188,1:0.303,2:0.229,3:0.176,4:0.104]
+[graph] epoch=63 step=500/785 fusion_gate=0.4207 problem_gate=0.3826 valid_node_ratio=0.4351 rel_w=[0:0.186,1:0.304,2:0.233,3:0.176,4:0.101]
+[graph] epoch=63 step=600/785 fusion_gate=0.4187 problem_gate=0.3833 valid_node_ratio=0.4234 rel_w=[0:0.185,1:0.303,2:0.232,3:0.174,4:0.105]
+[graph] epoch=63 step=700/785 fusion_gate=0.4206 problem_gate=0.3839 valid_node_ratio=0.4148 rel_w=[0:0.186,1:0.304,2:0.231,3:0.175,4:0.104]
+[graph] epoch=63 summary fusion_gate=0.4239 problem_gate=0.3844 valid_node_ratio=0.4601 rel_w=[0:0.196,1:0.291,2:0.232,3:0.174,4:0.107]
+epoch=63  avg_loss=0.0173 elapsed=0h 4m 25s
+--------------------------------
+[train] epoch=64/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=64 step=100/785 fusion_gate=0.4239 problem_gate=0.3828 valid_node_ratio=0.4360 rel_w=[0:0.193,1:0.301,2:0.232,3:0.174,4:0.099]
+[graph] epoch=64 step=200/785 fusion_gate=0.4253 problem_gate=0.3845 valid_node_ratio=0.4394 rel_w=[0:0.197,1:0.296,2:0.226,3:0.180,4:0.100]
+[graph] epoch=64 step=300/785 fusion_gate=0.4232 problem_gate=0.3838 valid_node_ratio=0.4366 rel_w=[0:0.188,1:0.302,2:0.231,3:0.179,4:0.101]
+[graph] epoch=64 step=400/785 fusion_gate=0.4218 problem_gate=0.3849 valid_node_ratio=0.4555 rel_w=[0:0.185,1:0.311,2:0.232,3:0.171,4:0.100]
+[graph] epoch=64 step=500/785 fusion_gate=0.4216 problem_gate=0.3838 valid_node_ratio=0.4476 rel_w=[0:0.190,1:0.312,2:0.232,3:0.167,4:0.099]
+[graph] epoch=64 step=600/785 fusion_gate=0.4219 problem_gate=0.3812 valid_node_ratio=0.4366 rel_w=[0:0.188,1:0.321,2:0.226,3:0.167,4:0.098]
+[graph] epoch=64 step=700/785 fusion_gate=0.4228 problem_gate=0.3804 valid_node_ratio=0.4430 rel_w=[0:0.188,1:0.321,2:0.224,3:0.167,4:0.099]
+[graph] epoch=64 summary fusion_gate=0.4214 problem_gate=0.3810 valid_node_ratio=0.4652 rel_w=[0:0.194,1:0.302,2:0.232,3:0.171,4:0.101]
+epoch=64  avg_loss=0.0174 elapsed=0h 4m 31s
+--------------------------------
+[train] epoch=65/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=65 step=100/785 fusion_gate=0.4216 problem_gate=0.3805 valid_node_ratio=0.4435 rel_w=[0:0.187,1:0.299,2:0.242,3:0.176,4:0.096]
+[graph] epoch=65 step=200/785 fusion_gate=0.4222 problem_gate=0.3815 valid_node_ratio=0.4322 rel_w=[0:0.186,1:0.300,2:0.236,3:0.183,4:0.095]
+[graph] epoch=65 step=300/785 fusion_gate=0.4207 problem_gate=0.3814 valid_node_ratio=0.4454 rel_w=[0:0.193,1:0.298,2:0.231,3:0.185,4:0.093]
+[graph] epoch=65 step=400/785 fusion_gate=0.4203 problem_gate=0.3803 valid_node_ratio=0.4394 rel_w=[0:0.195,1:0.292,2:0.235,3:0.183,4:0.095]
+[graph] epoch=65 step=500/785 fusion_gate=0.4215 problem_gate=0.3807 valid_node_ratio=0.4352 rel_w=[0:0.195,1:0.299,2:0.234,3:0.177,4:0.095]
+[graph] epoch=65 step=600/785 fusion_gate=0.4191 problem_gate=0.3803 valid_node_ratio=0.4461 rel_w=[0:0.194,1:0.315,2:0.222,3:0.173,4:0.095]
+[graph] epoch=65 step=700/785 fusion_gate=0.4232 problem_gate=0.3802 valid_node_ratio=0.4443 rel_w=[0:0.192,1:0.313,2:0.228,3:0.169,4:0.098]
+[graph] epoch=65 summary fusion_gate=0.4199 problem_gate=0.3809 valid_node_ratio=0.4332 rel_w=[0:0.185,1:0.325,2:0.233,3:0.162,4:0.095]
+epoch=65  avg_loss=0.0170 elapsed=0h 4m 23s
+--------------------------------
+744 874 997
+valid_answer_acc_23k 0.7462387161484454 0.876629889669007
+768 896 1000
+test_answer_acc_23k 0.768 0.896
+1231 1482 1833
+test_answer_acc_ape 0.6715766503000545 0.8085106382978723
+testing time 0h 4m 36s
+------------------------------------------------------
+[save] new_best epoch=65 23k_equation=0.768000 23k_value=0.896000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=65 ape_equation=0.671577 ape_value=0.808511
+[train] epoch=66/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=66 step=100/785 fusion_gate=0.4223 problem_gate=0.3710 valid_node_ratio=0.6091 rel_w=[0:0.330,1:0.141,2:0.245,3:0.112,4:0.172]
+[graph] epoch=66 step=200/785 fusion_gate=0.4211 problem_gate=0.3791 valid_node_ratio=0.4469 rel_w=[0:0.201,1:0.308,2:0.231,3:0.167,4:0.094]
+[graph] epoch=66 step=300/785 fusion_gate=0.4215 problem_gate=0.3802 valid_node_ratio=0.4453 rel_w=[0:0.198,1:0.298,2:0.230,3:0.177,4:0.096]
+[graph] epoch=66 step=400/785 fusion_gate=0.4223 problem_gate=0.3834 valid_node_ratio=0.4448 rel_w=[0:0.193,1:0.312,2:0.219,3:0.179,4:0.096]
+[graph] epoch=66 step=500/785 fusion_gate=0.4238 problem_gate=0.3825 valid_node_ratio=0.4445 rel_w=[0:0.184,1:0.315,2:0.222,3:0.179,4:0.099]
+[graph] epoch=66 step=600/785 fusion_gate=0.4219 problem_gate=0.3807 valid_node_ratio=0.4304 rel_w=[0:0.182,1:0.314,2:0.232,3:0.177,4:0.096]
+[graph] epoch=66 step=700/785 fusion_gate=0.4229 problem_gate=0.3840 valid_node_ratio=0.4313 rel_w=[0:0.183,1:0.296,2:0.240,3:0.184,4:0.097]
+[graph] epoch=66 summary fusion_gate=0.4201 problem_gate=0.3826 valid_node_ratio=0.4566 rel_w=[0:0.183,1:0.301,2:0.237,3:0.180,4:0.098]
+epoch=66  avg_loss=0.0164 elapsed=0h 4m 22s
+--------------------------------
+[train] epoch=67/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=67 step=100/785 fusion_gate=0.4219 problem_gate=0.3813 valid_node_ratio=0.4398 rel_w=[0:0.182,1:0.304,2:0.237,3:0.182,4:0.095]
+[graph] epoch=67 step=200/785 fusion_gate=0.4214 problem_gate=0.3830 valid_node_ratio=0.4288 rel_w=[0:0.182,1:0.316,2:0.230,3:0.176,4:0.097]
+[graph] epoch=67 step=300/785 fusion_gate=0.4235 problem_gate=0.3819 valid_node_ratio=0.4301 rel_w=[0:0.177,1:0.320,2:0.230,3:0.178,4:0.095]
+[graph] epoch=67 step=400/785 fusion_gate=0.4239 problem_gate=0.3840 valid_node_ratio=0.4464 rel_w=[0:0.189,1:0.304,2:0.228,3:0.182,4:0.096]
+[graph] epoch=67 step=500/785 fusion_gate=0.4225 problem_gate=0.3832 valid_node_ratio=0.4426 rel_w=[0:0.185,1:0.298,2:0.233,3:0.188,4:0.096]
+[graph] epoch=67 step=600/785 fusion_gate=0.4201 problem_gate=0.3834 valid_node_ratio=0.4468 rel_w=[0:0.182,1:0.302,2:0.240,3:0.180,4:0.095]
+[graph] epoch=67 step=700/785 fusion_gate=0.4215 problem_gate=0.3823 valid_node_ratio=0.4474 rel_w=[0:0.181,1:0.296,2:0.245,3:0.184,4:0.093]
+[graph] epoch=67 summary fusion_gate=0.4207 problem_gate=0.3819 valid_node_ratio=0.4436 rel_w=[0:0.183,1:0.304,2:0.235,3:0.185,4:0.093]
+epoch=67  avg_loss=0.0164 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=68/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=68 step=100/785 fusion_gate=0.4216 problem_gate=0.3817 valid_node_ratio=0.4275 rel_w=[0:0.180,1:0.304,2:0.239,3:0.186,4:0.092]
+[graph] epoch=68 step=200/785 fusion_gate=0.4229 problem_gate=0.3819 valid_node_ratio=0.4304 rel_w=[0:0.180,1:0.300,2:0.244,3:0.181,4:0.094]
+[graph] epoch=68 step=300/785 fusion_gate=0.4229 problem_gate=0.3836 valid_node_ratio=0.4324 rel_w=[0:0.180,1:0.304,2:0.237,3:0.185,4:0.094]
+[graph] epoch=68 step=400/785 fusion_gate=0.4230 problem_gate=0.3845 valid_node_ratio=0.4360 rel_w=[0:0.185,1:0.298,2:0.233,3:0.188,4:0.096]
+[graph] epoch=68 step=500/785 fusion_gate=0.4213 problem_gate=0.3830 valid_node_ratio=0.4395 rel_w=[0:0.181,1:0.289,2:0.242,3:0.194,4:0.094]
+[graph] epoch=68 step=600/785 fusion_gate=0.4237 problem_gate=0.3832 valid_node_ratio=0.4567 rel_w=[0:0.183,1:0.291,2:0.239,3:0.186,4:0.101]
+[graph] epoch=68 step=700/785 fusion_gate=0.4226 problem_gate=0.3824 valid_node_ratio=0.4348 rel_w=[0:0.176,1:0.296,2:0.240,3:0.190,4:0.099]
+[graph] epoch=68 summary fusion_gate=0.4214 problem_gate=0.3828 valid_node_ratio=0.4454 rel_w=[0:0.178,1:0.282,2:0.248,3:0.195,4:0.097]
+epoch=68  avg_loss=0.0164 elapsed=0h 4m 22s
+--------------------------------
+[train] epoch=69/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=69 step=100/785 fusion_gate=0.4255 problem_gate=0.3843 valid_node_ratio=0.4405 rel_w=[0:0.178,1:0.286,2:0.245,3:0.195,4:0.096]
+[graph] epoch=69 step=200/785 fusion_gate=0.4273 problem_gate=0.3839 valid_node_ratio=0.4551 rel_w=[0:0.178,1:0.289,2:0.245,3:0.187,4:0.101]
+[graph] epoch=69 step=300/785 fusion_gate=0.4273 problem_gate=0.3828 valid_node_ratio=0.4559 rel_w=[0:0.179,1:0.289,2:0.255,3:0.179,4:0.098]
+[graph] epoch=69 step=400/785 fusion_gate=0.4280 problem_gate=0.3813 valid_node_ratio=0.4508 rel_w=[0:0.183,1:0.296,2:0.247,3:0.178,4:0.096]
+[graph] epoch=69 step=500/785 fusion_gate=0.4279 problem_gate=0.3808 valid_node_ratio=0.4386 rel_w=[0:0.181,1:0.310,2:0.238,3:0.175,4:0.096]
+[graph] epoch=69 step=600/785 fusion_gate=0.4256 problem_gate=0.3816 valid_node_ratio=0.4385 rel_w=[0:0.175,1:0.320,2:0.237,3:0.170,4:0.098]
+[graph] epoch=69 step=700/785 fusion_gate=0.4235 problem_gate=0.3837 valid_node_ratio=0.4399 rel_w=[0:0.182,1:0.303,2:0.233,3:0.184,4:0.098]
+[graph] epoch=69 summary fusion_gate=0.4221 problem_gate=0.3824 valid_node_ratio=0.4397 rel_w=[0:0.188,1:0.297,2:0.234,3:0.184,4:0.097]
+epoch=69  avg_loss=0.0158 elapsed=0h 4m 26s
+--------------------------------
+[train] epoch=70/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=70 step=100/785 fusion_gate=0.4218 problem_gate=0.3821 valid_node_ratio=0.4322 rel_w=[0:0.182,1:0.293,2:0.237,3:0.190,4:0.098]
+[graph] epoch=70 step=200/785 fusion_gate=0.4263 problem_gate=0.3834 valid_node_ratio=0.4483 rel_w=[0:0.186,1:0.290,2:0.238,3:0.188,4:0.098]
+[graph] epoch=70 step=300/785 fusion_gate=0.4244 problem_gate=0.3816 valid_node_ratio=0.4490 rel_w=[0:0.185,1:0.301,2:0.233,3:0.184,4:0.098]
+[graph] epoch=70 step=400/785 fusion_gate=0.4239 problem_gate=0.3827 valid_node_ratio=0.4429 rel_w=[0:0.184,1:0.312,2:0.230,3:0.176,4:0.098]
+[graph] epoch=70 step=500/785 fusion_gate=0.4229 problem_gate=0.3816 valid_node_ratio=0.4309 rel_w=[0:0.177,1:0.315,2:0.234,3:0.175,4:0.099]
+[graph] epoch=70 step=600/785 fusion_gate=0.4238 problem_gate=0.3819 valid_node_ratio=0.4590 rel_w=[0:0.182,1:0.295,2:0.241,3:0.182,4:0.100]
+[graph] epoch=70 step=700/785 fusion_gate=0.4217 problem_gate=0.3810 valid_node_ratio=0.4499 rel_w=[0:0.183,1:0.298,2:0.239,3:0.182,4:0.098]
+[graph] epoch=70 summary fusion_gate=0.4212 problem_gate=0.3802 valid_node_ratio=0.4307 rel_w=[0:0.179,1:0.299,2:0.241,3:0.183,4:0.098]
+epoch=70  avg_loss=0.0157 elapsed=0h 4m 28s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_070
+741 872 997
+valid_answer_acc_23k 0.7432296890672017 0.8746238716148446
+768 896 1000
+test_answer_acc_23k 0.768 0.896
+1219 1473 1833
+test_answer_acc_ape 0.6650300054555374 0.8036006546644845
+testing time 0h 4m 41s
+------------------------------------------------------
+[save] keep_best epoch=65 23k_equation=0.768000 23k_value=0.896000
+[save] keep_best_linked_ape epoch=65 ape_equation=0.671577 ape_value=0.808511
+[train] epoch=71/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=71 step=100/785 fusion_gate=0.4235 problem_gate=0.3691 valid_node_ratio=0.6317 rel_w=[0:0.304,1:0.137,2:0.254,3:0.120,4:0.185]
+[graph] epoch=71 step=200/785 fusion_gate=0.4240 problem_gate=0.3821 valid_node_ratio=0.4253 rel_w=[0:0.178,1:0.307,2:0.232,3:0.180,4:0.103]
+[graph] epoch=71 step=300/785 fusion_gate=0.4215 problem_gate=0.3825 valid_node_ratio=0.4471 rel_w=[0:0.185,1:0.297,2:0.234,3:0.180,4:0.105]
+[graph] epoch=71 step=400/785 fusion_gate=0.4214 problem_gate=0.3824 valid_node_ratio=0.4497 rel_w=[0:0.180,1:0.297,2:0.240,3:0.177,4:0.106]
+[graph] epoch=71 step=500/785 fusion_gate=0.4240 problem_gate=0.3831 valid_node_ratio=0.4459 rel_w=[0:0.175,1:0.310,2:0.239,3:0.173,4:0.102]
+[graph] epoch=71 step=600/785 fusion_gate=0.4230 problem_gate=0.3833 valid_node_ratio=0.4378 rel_w=[0:0.174,1:0.306,2:0.246,3:0.169,4:0.104]
+[graph] epoch=71 step=700/785 fusion_gate=0.4233 problem_gate=0.3839 valid_node_ratio=0.4383 rel_w=[0:0.174,1:0.297,2:0.251,3:0.175,4:0.102]
+[graph] epoch=71 summary fusion_gate=0.4256 problem_gate=0.3829 valid_node_ratio=0.4495 rel_w=[0:0.177,1:0.304,2:0.242,3:0.175,4:0.102]
+epoch=71  avg_loss=0.0159 elapsed=0h 4m 29s
+--------------------------------
+[train] epoch=72/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=72 step=100/785 fusion_gate=0.4250 problem_gate=0.3811 valid_node_ratio=0.4494 rel_w=[0:0.179,1:0.300,2:0.242,3:0.180,4:0.099]
+[graph] epoch=72 step=200/785 fusion_gate=0.4249 problem_gate=0.3833 valid_node_ratio=0.4351 rel_w=[0:0.173,1:0.314,2:0.239,3:0.175,4:0.098]
+[graph] epoch=72 step=300/785 fusion_gate=0.4236 problem_gate=0.3814 valid_node_ratio=0.4272 rel_w=[0:0.177,1:0.320,2:0.233,3:0.174,4:0.097]
+[graph] epoch=72 step=400/785 fusion_gate=0.4229 problem_gate=0.3817 valid_node_ratio=0.4339 rel_w=[0:0.179,1:0.325,2:0.229,3:0.169,4:0.098]
+[graph] epoch=72 step=500/785 fusion_gate=0.4239 problem_gate=0.3830 valid_node_ratio=0.4609 rel_w=[0:0.179,1:0.326,2:0.229,3:0.167,4:0.099]
+[graph] epoch=72 step=600/785 fusion_gate=0.4258 problem_gate=0.3860 valid_node_ratio=0.4362 rel_w=[0:0.174,1:0.327,2:0.231,3:0.171,4:0.097]
+[graph] epoch=72 step=700/785 fusion_gate=0.4265 problem_gate=0.3845 valid_node_ratio=0.4366 rel_w=[0:0.178,1:0.321,2:0.230,3:0.173,4:0.098]
+[graph] epoch=72 summary fusion_gate=0.4246 problem_gate=0.3847 valid_node_ratio=0.4264 rel_w=[0:0.179,1:0.309,2:0.234,3:0.179,4:0.098]
+epoch=72  avg_loss=0.0153 elapsed=0h 4m 28s
+--------------------------------
+[train] epoch=73/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=73 step=100/785 fusion_gate=0.4221 problem_gate=0.3829 valid_node_ratio=0.4445 rel_w=[0:0.176,1:0.322,2:0.234,3:0.171,4:0.098]
+[graph] epoch=73 step=200/785 fusion_gate=0.4259 problem_gate=0.3843 valid_node_ratio=0.4406 rel_w=[0:0.184,1:0.312,2:0.227,3:0.179,4:0.098]
+[graph] epoch=73 step=300/785 fusion_gate=0.4235 problem_gate=0.3839 valid_node_ratio=0.4657 rel_w=[0:0.193,1:0.307,2:0.221,3:0.183,4:0.095]
+[graph] epoch=73 step=400/785 fusion_gate=0.4279 problem_gate=0.3832 valid_node_ratio=0.4502 rel_w=[0:0.188,1:0.308,2:0.227,3:0.181,4:0.096]
+[graph] epoch=73 step=500/785 fusion_gate=0.4233 problem_gate=0.3830 valid_node_ratio=0.4257 rel_w=[0:0.181,1:0.305,2:0.226,3:0.191,4:0.097]
+[graph] epoch=73 step=600/785 fusion_gate=0.4227 problem_gate=0.3819 valid_node_ratio=0.4397 rel_w=[0:0.184,1:0.307,2:0.224,3:0.186,4:0.098]
+[graph] epoch=73 step=700/785 fusion_gate=0.4224 problem_gate=0.3821 valid_node_ratio=0.4446 rel_w=[0:0.185,1:0.319,2:0.223,3:0.176,4:0.098]
+[graph] epoch=73 summary fusion_gate=0.4237 problem_gate=0.3823 valid_node_ratio=0.4429 rel_w=[0:0.187,1:0.304,2:0.227,3:0.185,4:0.097]
+epoch=73  avg_loss=0.0150 elapsed=0h 4m 32s
+--------------------------------
+[train] epoch=74/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=74 step=100/785 fusion_gate=0.4260 problem_gate=0.3816 valid_node_ratio=0.4455 rel_w=[0:0.183,1:0.306,2:0.237,3:0.180,4:0.094]
+[graph] epoch=74 step=200/785 fusion_gate=0.4241 problem_gate=0.3822 valid_node_ratio=0.4472 rel_w=[0:0.181,1:0.305,2:0.235,3:0.183,4:0.096]
+[graph] epoch=74 step=300/785 fusion_gate=0.4223 problem_gate=0.3815 valid_node_ratio=0.4351 rel_w=[0:0.179,1:0.306,2:0.233,3:0.190,4:0.092]
+[graph] epoch=74 step=400/785 fusion_gate=0.4251 problem_gate=0.3801 valid_node_ratio=0.4419 rel_w=[0:0.184,1:0.299,2:0.234,3:0.187,4:0.095]
+[graph] epoch=74 step=500/785 fusion_gate=0.4251 problem_gate=0.3804 valid_node_ratio=0.4448 rel_w=[0:0.185,1:0.291,2:0.233,3:0.195,4:0.096]
+[graph] epoch=74 step=600/785 fusion_gate=0.4237 problem_gate=0.3799 valid_node_ratio=0.4480 rel_w=[0:0.175,1:0.310,2:0.237,3:0.184,4:0.093]
+[graph] epoch=74 step=700/785 fusion_gate=0.4236 problem_gate=0.3811 valid_node_ratio=0.4384 rel_w=[0:0.177,1:0.306,2:0.235,3:0.187,4:0.096]
+[graph] epoch=74 summary fusion_gate=0.4236 problem_gate=0.3826 valid_node_ratio=0.4498 rel_w=[0:0.184,1:0.301,2:0.233,3:0.187,4:0.094]
+epoch=74  avg_loss=0.0151 elapsed=0h 4m 32s
+--------------------------------
+[train] epoch=75/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=75 step=100/785 fusion_gate=0.4243 problem_gate=0.3827 valid_node_ratio=0.4379 rel_w=[0:0.176,1:0.320,2:0.241,3:0.170,4:0.093]
+[graph] epoch=75 step=200/785 fusion_gate=0.4234 problem_gate=0.3817 valid_node_ratio=0.4539 rel_w=[0:0.173,1:0.319,2:0.256,3:0.160,4:0.092]
+[graph] epoch=75 step=300/785 fusion_gate=0.4258 problem_gate=0.3814 valid_node_ratio=0.4316 rel_w=[0:0.173,1:0.322,2:0.243,3:0.168,4:0.094]
+[graph] epoch=75 step=400/785 fusion_gate=0.4252 problem_gate=0.3808 valid_node_ratio=0.4505 rel_w=[0:0.180,1:0.312,2:0.244,3:0.169,4:0.095]
+[graph] epoch=75 step=500/785 fusion_gate=0.4238 problem_gate=0.3808 valid_node_ratio=0.4590 rel_w=[0:0.184,1:0.311,2:0.244,3:0.167,4:0.093]
+[graph] epoch=75 step=600/785 fusion_gate=0.4265 problem_gate=0.3801 valid_node_ratio=0.4457 rel_w=[0:0.182,1:0.307,2:0.242,3:0.174,4:0.095]
+[graph] epoch=75 step=700/785 fusion_gate=0.4248 problem_gate=0.3821 valid_node_ratio=0.4465 rel_w=[0:0.191,1:0.308,2:0.221,3:0.178,4:0.101]
+[graph] epoch=75 summary fusion_gate=0.4240 problem_gate=0.3823 valid_node_ratio=0.4315 rel_w=[0:0.189,1:0.311,2:0.221,3:0.179,4:0.100]
+epoch=75  avg_loss=0.0156 elapsed=0h 4m 28s
+--------------------------------
+730 870 997
+valid_answer_acc_23k 0.7321965897693079 0.872617853560682
+761 897 1000
+test_answer_acc_23k 0.761 0.897
+1241 1477 1833
+test_answer_acc_ape 0.6770321876704856 0.8057828696126569
+testing time 0h 4m 52s
+------------------------------------------------------
+[save] new_best epoch=75 23k_equation=0.761000 23k_value=0.897000 -> models_graph_wape_4v100
+[save] linked_ape_metrics epoch=75 ape_equation=0.677032 ape_value=0.805783
+[train] epoch=76/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=76 step=100/785 fusion_gate=0.4305 problem_gate=0.3731 valid_node_ratio=0.6147 rel_w=[0:0.307,1:0.142,2:0.249,3:0.119,4:0.183]
+[graph] epoch=76 step=200/785 fusion_gate=0.4274 problem_gate=0.3810 valid_node_ratio=0.4374 rel_w=[0:0.192,1:0.303,2:0.230,3:0.178,4:0.098]
+[graph] epoch=76 step=300/785 fusion_gate=0.4281 problem_gate=0.3795 valid_node_ratio=0.4381 rel_w=[0:0.184,1:0.310,2:0.236,3:0.172,4:0.098]
+[graph] epoch=76 step=400/785 fusion_gate=0.4281 problem_gate=0.3800 valid_node_ratio=0.4434 rel_w=[0:0.184,1:0.312,2:0.235,3:0.170,4:0.098]
+[graph] epoch=76 step=500/785 fusion_gate=0.4258 problem_gate=0.3801 valid_node_ratio=0.4432 rel_w=[0:0.189,1:0.307,2:0.233,3:0.174,4:0.097]
+[graph] epoch=76 step=600/785 fusion_gate=0.4261 problem_gate=0.3797 valid_node_ratio=0.4433 rel_w=[0:0.190,1:0.295,2:0.239,3:0.179,4:0.097]
+[graph] epoch=76 step=700/785 fusion_gate=0.4262 problem_gate=0.3817 valid_node_ratio=0.4382 rel_w=[0:0.189,1:0.295,2:0.233,3:0.182,4:0.100]
+[graph] epoch=76 summary fusion_gate=0.4245 problem_gate=0.3824 valid_node_ratio=0.4314 rel_w=[0:0.187,1:0.298,2:0.230,3:0.186,4:0.099]
+epoch=76  avg_loss=0.0150 elapsed=0h 4m 38s
+--------------------------------
+738 870 997
+valid_answer_acc_23k 0.7402206619859579 0.872617853560682
+770 892 1000
+test_answer_acc_23k 0.77 0.892
+1235 1481 1833
+test_answer_acc_ape 0.6737588652482269 0.8079650845608293
+testing time 0h 4m 49s
+------------------------------------------------------
+[save] keep_best epoch=75 23k_equation=0.761000 23k_value=0.897000
+[save] keep_best_linked_ape epoch=75 ape_equation=0.677032 ape_value=0.805783
+[train] epoch=77/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=77 step=100/785 fusion_gate=0.4291 problem_gate=0.3712 valid_node_ratio=0.6209 rel_w=[0:0.301,1:0.147,2:0.252,3:0.119,4:0.181]
+[graph] epoch=77 step=200/785 fusion_gate=0.4288 problem_gate=0.3821 valid_node_ratio=0.4438 rel_w=[0:0.188,1:0.303,2:0.229,3:0.184,4:0.097]
+[graph] epoch=77 step=300/785 fusion_gate=0.4254 problem_gate=0.3802 valid_node_ratio=0.4439 rel_w=[0:0.187,1:0.295,2:0.231,3:0.185,4:0.102]
+[graph] epoch=77 step=400/785 fusion_gate=0.4249 problem_gate=0.3808 valid_node_ratio=0.4367 rel_w=[0:0.187,1:0.295,2:0.232,3:0.185,4:0.100]
+[graph] epoch=77 step=500/785 fusion_gate=0.4265 problem_gate=0.3818 valid_node_ratio=0.4342 rel_w=[0:0.187,1:0.285,2:0.235,3:0.191,4:0.102]
+[graph] epoch=77 step=600/785 fusion_gate=0.4294 problem_gate=0.3820 valid_node_ratio=0.4387 rel_w=[0:0.183,1:0.303,2:0.235,3:0.181,4:0.099]
+[graph] epoch=77 step=700/785 fusion_gate=0.4289 problem_gate=0.3839 valid_node_ratio=0.4565 rel_w=[0:0.189,1:0.299,2:0.230,3:0.177,4:0.105]
+[graph] epoch=77 summary fusion_gate=0.4302 problem_gate=0.3817 valid_node_ratio=0.4234 rel_w=[0:0.180,1:0.310,2:0.231,3:0.178,4:0.101]
+epoch=77  avg_loss=0.0144 elapsed=0h 4m 40s
+--------------------------------
+751 878 997
+valid_answer_acc_23k 0.753259779338014 0.880641925777332
+770 893 1000
+test_answer_acc_23k 0.77 0.893
+1223 1482 1833
+test_answer_acc_ape 0.6672122204037098 0.8085106382978723
+testing time 0h 4m 53s
+------------------------------------------------------
+[save] keep_best epoch=75 23k_equation=0.761000 23k_value=0.897000
+[save] keep_best_linked_ape epoch=75 ape_equation=0.677032 ape_value=0.805783
+[train] epoch=78/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=78 step=100/785 fusion_gate=0.4346 problem_gate=0.3719 valid_node_ratio=0.6060 rel_w=[0:0.283,1:0.149,2:0.263,3:0.113,4:0.193]
+[graph] epoch=78 step=200/785 fusion_gate=0.4301 problem_gate=0.3824 valid_node_ratio=0.4512 rel_w=[0:0.184,1:0.314,2:0.223,3:0.175,4:0.104]
+[graph] epoch=78 step=300/785 fusion_gate=0.4292 problem_gate=0.3821 valid_node_ratio=0.4488 rel_w=[0:0.180,1:0.312,2:0.223,3:0.182,4:0.103]
+[graph] epoch=78 step=400/785 fusion_gate=0.4259 problem_gate=0.3816 valid_node_ratio=0.4550 rel_w=[0:0.172,1:0.324,2:0.225,3:0.176,4:0.103]
+[graph] epoch=78 step=500/785 fusion_gate=0.4259 problem_gate=0.3813 valid_node_ratio=0.4411 rel_w=[0:0.170,1:0.325,2:0.226,3:0.178,4:0.101]
+[graph] epoch=78 step=600/785 fusion_gate=0.4293 problem_gate=0.3813 valid_node_ratio=0.4361 rel_w=[0:0.174,1:0.323,2:0.223,3:0.179,4:0.101]
+[graph] epoch=78 step=700/785 fusion_gate=0.4217 problem_gate=0.3816 valid_node_ratio=0.4281 rel_w=[0:0.171,1:0.323,2:0.221,3:0.180,4:0.105]
+[graph] epoch=78 summary fusion_gate=0.4233 problem_gate=0.3788 valid_node_ratio=0.4392 rel_w=[0:0.173,1:0.313,2:0.227,3:0.180,4:0.106]
+epoch=78  avg_loss=0.0148 elapsed=0h 4m 29s
+--------------------------------
+747 881 997
+valid_answer_acc_23k 0.7492477432296891 0.8836509528585758
+759 891 1000
+test_answer_acc_23k 0.759 0.891
+1227 1482 1833
+test_answer_acc_ape 0.6693944353518821 0.8085106382978723
+testing time 0h 4m 37s
+------------------------------------------------------
+[save] keep_best epoch=75 23k_equation=0.761000 23k_value=0.897000
+[save] keep_best_linked_ape epoch=75 ape_equation=0.677032 ape_value=0.805783
+[train] epoch=79/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=79 step=100/785 fusion_gate=0.4280 problem_gate=0.3667 valid_node_ratio=0.6167 rel_w=[0:0.274,1:0.148,2:0.256,3:0.121,4:0.201]
+[graph] epoch=79 step=200/785 fusion_gate=0.4283 problem_gate=0.3809 valid_node_ratio=0.4414 rel_w=[0:0.178,1:0.306,2:0.226,3:0.180,4:0.109]
+[graph] epoch=79 step=300/785 fusion_gate=0.4259 problem_gate=0.3805 valid_node_ratio=0.4470 rel_w=[0:0.176,1:0.316,2:0.230,3:0.175,4:0.104]
+[graph] epoch=79 step=400/785 fusion_gate=0.4270 problem_gate=0.3820 valid_node_ratio=0.4349 rel_w=[0:0.180,1:0.304,2:0.235,3:0.175,4:0.105]
+[graph] epoch=79 step=500/785 fusion_gate=0.4270 problem_gate=0.3828 valid_node_ratio=0.4454 rel_w=[0:0.190,1:0.288,2:0.234,3:0.182,4:0.106]
+[graph] epoch=79 step=600/785 fusion_gate=0.4270 problem_gate=0.3815 valid_node_ratio=0.4502 rel_w=[0:0.186,1:0.295,2:0.235,3:0.177,4:0.108]
+[graph] epoch=79 step=700/785 fusion_gate=0.4267 problem_gate=0.3804 valid_node_ratio=0.4563 rel_w=[0:0.187,1:0.280,2:0.245,3:0.182,4:0.107]
+[graph] epoch=79 summary fusion_gate=0.4240 problem_gate=0.3804 valid_node_ratio=0.4403 rel_w=[0:0.177,1:0.295,2:0.246,3:0.178,4:0.104]
+epoch=79  avg_loss=0.0145 elapsed=0h 4m 31s
+--------------------------------
+747 871 997
+valid_answer_acc_23k 0.7492477432296891 0.8736208625877633
+762 887 1000
+test_answer_acc_23k 0.762 0.887
+1234 1483 1833
+test_answer_acc_ape 0.6732133115111838 0.8090561920349154
+testing time 0h 4m 49s
+------------------------------------------------------
+[save] keep_best epoch=75 23k_equation=0.761000 23k_value=0.897000
+[save] keep_best_linked_ape epoch=75 ape_equation=0.677032 ape_value=0.805783
+[train] epoch=80/80 total_steps=3138 rank_steps=785 world_size=4
+[graph] epoch=80 step=100/785 fusion_gate=0.4253 problem_gate=0.3709 valid_node_ratio=0.6246 rel_w=[0:0.280,1:0.144,2:0.256,3:0.120,4:0.200]
+[graph] epoch=80 step=200/785 fusion_gate=0.4252 problem_gate=0.3802 valid_node_ratio=0.4463 rel_w=[0:0.185,1:0.304,2:0.232,3:0.175,4:0.104]
+[graph] epoch=80 step=300/785 fusion_gate=0.4270 problem_gate=0.3799 valid_node_ratio=0.4399 rel_w=[0:0.183,1:0.302,2:0.235,3:0.179,4:0.101]
+[graph] epoch=80 step=400/785 fusion_gate=0.4254 problem_gate=0.3801 valid_node_ratio=0.4405 rel_w=[0:0.179,1:0.302,2:0.238,3:0.182,4:0.099]
+[graph] epoch=80 step=500/785 fusion_gate=0.4278 problem_gate=0.3797 valid_node_ratio=0.4255 rel_w=[0:0.178,1:0.300,2:0.242,3:0.181,4:0.099]
+[graph] epoch=80 step=600/785 fusion_gate=0.4272 problem_gate=0.3814 valid_node_ratio=0.4339 rel_w=[0:0.182,1:0.292,2:0.245,3:0.183,4:0.098]
+[graph] epoch=80 step=700/785 fusion_gate=0.4270 problem_gate=0.3831 valid_node_ratio=0.4438 rel_w=[0:0.184,1:0.283,2:0.241,3:0.192,4:0.101]
+[graph] epoch=80 summary fusion_gate=0.4281 problem_gate=0.3804 valid_node_ratio=0.4408 rel_w=[0:0.179,1:0.297,2:0.230,3:0.192,4:0.102]
+epoch=80  avg_loss=0.0143 elapsed=0h 4m 25s
+--------------------------------
+[save] epoch_checkpoint=models_graph_wape_4v100/epoch_checkpoints/epoch_080
+753 874 997
+valid_answer_acc_23k 0.7552657973921765 0.876629889669007
+754 894 1000
+test_answer_acc_23k 0.754 0.894
+1235 1482 1833
+test_answer_acc_ape 0.6737588652482269 0.8085106382978723
+testing time 0h 4m 40s
+------------------------------------------------------
+[save] keep_best epoch=75 23k_equation=0.761000 23k_value=0.897000
+[save] keep_best_linked_ape epoch=75 ape_equation=0.677032 ape_value=0.805783
+[best] epoch=75 23k_equation=0.761000 23k_value=0.897000
+[best] linked_ape_equation=0.677032 linked_ape_value=0.805783

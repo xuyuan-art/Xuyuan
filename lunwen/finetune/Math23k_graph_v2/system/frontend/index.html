@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>正在跳转</title>
+  <link rel="stylesheet" href="./css/common.css" />
+</head>
+<body>
+  <div class="page-root" style="display:grid;place-items:center;padding:24px;">
+    <div class="card" style="max-width:520px;width:100%;">
+      <h2>系统正在加载</h2>
+      <p class="sub">正在检查登录状态并跳转。</p>
+    </div>
+  </div>
+  <script src="./config.js"></script>
+  <script src="./js/common.js"></script>
+  <script>
+    (async function () {
+      try {
+        var sess = await window.MWP.getSession();
+        if (sess && sess.authenticated) {
+          window.location.replace(sess.user && sess.user.is_admin ? "./admin.html" : "./home.html");
+          return;
+        }
+      } catch (e) {
+        // ignore
+      }
+      window.location.replace("./login.html");
+    })();
+  </script>
+</body>
+</html>
